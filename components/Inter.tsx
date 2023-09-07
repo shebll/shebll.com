@@ -35,10 +35,10 @@ function Inter() {
             Contact Me 
             <BsArrowRight/>
           </Link>
-          <button className="btn">
+          <a className="btn" href="/cv.pdf" download={true}>
             Download CV
             <BsDownload/>
-          </button>
+          </a>
           <Link className="btn rounded-full" href={"https://www.linkedin.com/in/ahmed-shebl-07a331268/"}target="blank" >
             <FaLinkedinIn/>
           </Link>
