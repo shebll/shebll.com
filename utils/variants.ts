@@ -60,5 +60,14 @@ const waveVariants={
     }
   }
 }
+const variantsQ ={
+  hidden:{
+    scale:0,
+  },
+  show:{
+    scale:1,
+    transition:{ type:"spring" , stiffness:100, duration: 0.8 , delay:0.1 }
+  },
+}
 
-export {waveVariants, ImageVariants,TextVariants,btnVariants}
+export {waveVariants, ImageVariants , TextVariants , btnVariants , variantsQ}

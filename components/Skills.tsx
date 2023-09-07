@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { FaCss3Alt, FaGit, FaHtml5, FaJsSquare, FaPython, FaReact, FaSass } from 'react-icons/fa'
 
 function Skills() {
   return (

@@ -23,7 +23,7 @@ function Inter() {
       </div>
       <div className="flex justify-center items-center  flex-col gap-8">
         <m.h1 variants={TextVariants} initial={"initial"} animate={"animate"}
-          className="text-[24px] md:text-4xl text-center leading-[33px] md:leading-[46px] tracking-tight">
+          className="text-[24px] md:text-4xl leading-[33px] md:leading-[46px] text-center tracking-tight">
           Hello, I&apos;m <span className="font-bold">Ahmed Shebl</span>.
           I&apos;m a junior <span className="font-bold">Full-Stack Developer</span> <br />
           with <span className="font-bold">1</span> years of experience. I enjoy building<br />
