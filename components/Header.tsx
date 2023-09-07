@@ -20,7 +20,7 @@ function Header() {
         <nav className="flex gap-4 gap-y-2 justify-center flex-wrap overflow-hidden">
           {links.map((link,index) =>(
             <m.div key={index}
-            initial={{y:-50 ,filter:"blur(3px)"}}
+            initial={{y:-100 ,filter:"blur(3px)"}}
             animate={{y:0 ,filter:"blur(0px)"}}
             transition={{ duration: 1, type: "tween", stiffness: 50 , delay:0.4+(0.09 *index)}}>
               <Link href={link.hash} 
