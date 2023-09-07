@@ -39,8 +39,10 @@ function Inter() {
             Download CV
             <BsDownload/>
           </button>
-          <Link className="btn rounded-full" href={"/"} target="blank" ><FaLinkedinIn/></Link>
-          <Link className="btn" href={"/"} target="blank"><FaGithub/></Link>
+          <Link className="btn rounded-full" href={"https://www.linkedin.com/in/ahmed-shebl-07a331268/"}target="blank" >
+            <FaLinkedinIn/>
+          </Link>
+          <Link className="btn" href={"https://github.com/shebll"} target="blank"><FaGithub/></Link>
         </m.div>
       </div>
     </section>

@@ -46,7 +46,7 @@
   }
 } */
 .btn{
-  @apply flex justify-center items-center gap-3 flex-row shadow-xl w-full md:w-fit;  
+  @apply flex justify-center items-center gap-3 flex-row shadow-xl w-full md:w-fit hover:scale-[1.05] transition-all active:scale-[0.93];
   padding: 10px 20px;
   border-radius: 9999px;
   background: #e0e0e0;
@@ -63,3 +63,79 @@
   color: aliceblue;
 }
 /* btns style  */
+/*  */
+.headerText{
+@apply text-4xl font-bold uppercase 
+}
+.subText{
+  @apply text-lg font-semibold text-gray-500 
+}
+.pragraph{
+
+}
+/*  */
+/*  */
+.slider{
+  @apply w-[350px] md:w-[550px]  ;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+.slider-track{
+  display: flex;
+  width: calc(18*80px);
+  animation:  scrollVertical 15s  linear infinite;
+  -webkit-animation:  scrollVertical 15s  linear infinite;
+}
+.slide{
+  @apply shadow-xl ;
+  font-weight: bold;
+  font-size: 40px;
+  width: 80px;
+  box-sizing: border-box;
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  background: #e9e9e9;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+@keyframes scrollVertical {
+  0%{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+  100%{
+    transform: translateX(calc(-80*9px) );
+    -webkit-transform: translateX(calc(-80*9px) );
+    -moz-transform: translateX(calc(-80*9px) );
+    -ms-transform: translateX(calc(-80*9px) );
+    -o-transform: translateX(calc(-80*9px) );
+}
+}
+.slider::before,
+.slider::after {
+background: linear-gradient(to right, rgb(249 250 251) 0%, rgba(255,255,255,0) 100%);
+content:'';
+height: 100%;
+position: absolute;
+width: 15%;
+z-index: 2;
+}
+.slider::before{
+left: 0;
+top: 0;
+}
+.slider::after {
+    right: 0; top: 0; transform: rotateZ(180deg); -webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); -ms-transform: rotateZ(180deg); -o-transform: rotateZ(180deg);
+}
+/*  */
