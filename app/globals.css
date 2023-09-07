@@ -57,7 +57,8 @@ html{
   -ms-border-radius: 9999px;
   -o-border-radius: 9999px;
   font-size: 1.003rem;
-}
+} 
+
 .btn.primary{
   background: #0b0a1d;
   color: aliceblue;
