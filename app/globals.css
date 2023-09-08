@@ -46,8 +46,9 @@ html{
 /* //////////////////////////////////////// */
 /* btns style  */
 .btn{
-  @apply flex justify-center items-center gap-3 flex-row shadow-xl w-full md:w-fit hover:scale-[1.05] transition-all active:scale-[0.93];
-  padding: 10px 20px;
+  @apply flex justify-center items-center gap-3 flex-row  w-full md:w-fit hover:scale-[1.05] transition-all active:scale-[0.93];
+  padding: 8px 20px;
+  box-shadow: 0px 8px 9px 0px #4d4d4d42;
   border-radius: 9999px;
   background: #e0e0e0;
   color: #0b0a1d;
@@ -87,7 +88,7 @@ html{
 }
 .slider-track{
   display: flex;
-  width: calc(18*80px);
+  width: calc(18*120px);
   animation:  scrollVertical 15s  linear infinite;
   -webkit-animation:  scrollVertical 15s  linear infinite;
 }
@@ -95,13 +96,13 @@ html{
   @apply shadow-xl ;
   font-weight: bold;
   font-size: 40px;
-  width: 80px;
+  width: 120px;
   box-sizing: border-box;
   margin: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;
+  padding: 0px 0px;
   background: #e9e9e9;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -118,11 +119,11 @@ html{
     -o-transform: translateX(0px);
 }
   100%{
-    transform: translateX(calc(-80*9px) );
-    -webkit-transform: translateX(calc(-80*9px) );
-    -moz-transform: translateX(calc(-80*9px) );
-    -ms-transform: translateX(calc(-80*9px) );
-    -o-transform: translateX(calc(-80*9px) );
+    transform: translateX(calc(-120*9px) );
+    -webkit-transform: translateX(calc(-120*9px) );
+    -moz-transform: translateX(calc(-120*9px) );
+    -ms-transform: translateX(calc(-120*9px) );
+    -o-transform: translateX(calc(-120*9px) );
 }
 }
 .slider::before,
@@ -151,3 +152,30 @@ top: 0;
   
 }
 /* Question style  */
+/*  */
+.projectCard:nth-child(odd):hover div > img{
+  transition: .3s ease-in-out;
+  transform: rotate(4deg) scale(1.44);
+  -webkit-transform: rotate(4deg) scale(1.44);
+  -moz-transform: rotate(4deg) scale(1.44);
+  -ms-transform: rotate(4deg) scale(1.44);
+  -o-transform: rotate(4deg) scale(1.44);
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.projectCard:nth-child(even):hover div > img{
+  transition: .3s ease-in-out;
+  transform: rotate(-4deg) scale(1.44);
+  -webkit-transform: rotate(-4deg) scale(1.44);
+  -moz-transform: rotate(-4deg) scale(1.44);
+  -ms-transform: rotate(-4deg) scale(1.44);
+  -o-transform: rotate(-4deg) scale(1.44);
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+/*  */

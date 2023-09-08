@@ -1,6 +1,7 @@
 import About from '@/components/About'
 import Divider from '@/components/Divider'
 import Inter from '@/components/Inter'
+import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
       <Inter/>
       <Divider/>
       <About/>
+      <Divider/>
+      <Projects/>
       <Divider/>
       <Skills/>
     </main>

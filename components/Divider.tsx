@@ -7,7 +7,9 @@ function Divider() {
     <LazyMotion features={domAnimation}>
     <m.div
     initial={{opacity:0}}
-    whileInView={{opacity:1}}  className='h-[100px] w-1 bg-[#e1e1e1] blur-[2px]'>     
+    whileInView={{opacity:1}}
+    viewport={{once:true}}
+    transition={{delay:2.5}}  className='h-[100px] w-1 bg-[#e1e1e1] blur-[2px]'>     
     </m.div>
     </LazyMotion>
   )

@@ -1,3 +1,4 @@
+import { skillsData } from '@/lib/data'
 import Image from 'next/image'
 import React from 'react'
 
@@ -10,7 +11,17 @@ function Skills() {
       </div>
       <div className="slider ">
         <div className="slider-track">
-          <div className="slide">
+          {skillsData.map((skill,index )=>(
+            <div className="slide" key={index}>
+              <Image src={`/skillsSVG/${skill}.svg`} alt={`${skill}-logo` } width={60} height={60}/>
+            </div>
+          ))}
+          {skillsData.map((skill,index )=>(
+            <div className="slide" key={index}>
+              <Image src={`/skillsSVG/${skill}.svg`} alt={`${skill}-logo` } width={60} height={60}/>
+            </div>
+          ))}
+          {/*<div className="slide">
             <Image src={"/framer-motion.svg"} alt='framer-motion'  width={60} height={60}/>
           </div>
           <div className="slide">
@@ -63,7 +74,7 @@ function Skills() {
           </div>
           <div className="slide">
             <Image src={"Tailwind_CSS_logo.svg"} alt='Tailwind_CSS_logo (1)' width={60} height={60} />
-          </div>
+          </div> */}
 
         </div>
       </div>

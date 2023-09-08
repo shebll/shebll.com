@@ -27,7 +27,7 @@ function About() {
   const Q5Rotate=useTransform(scrollYProgress ,[0,1],[3,26])
   //////////
   return (
-    <section ref={refVideo} id='about' className=' scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
+    <section ref={refVideo} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
       <div className="flex justify-center items-center flex-col gap-4">
         <h1 className='headerText'>About Me</h1>
         <p className='subText'>here about my section</p>

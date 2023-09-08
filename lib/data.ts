@@ -2,9 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+
 
 export const links = [
   {
@@ -68,29 +66,49 @@ export const experiencesData = [
   },
 ] as const;
 
-// export const projectsData = [
-//   {
-//     title: "CorpComment",
-//     description:
-//       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-//     imageUrl: corpcommentImg,
-//   },
-//   {
-//     title: "rmtDev",
-//     description:
-//       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//     imageUrl: rmtdevImg,
-//   },
-//   {
-//     title: "Word Analytics",
-//     description:
-//       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-//     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-//     imageUrl: wordanalyticsImg,
-//   },
-// ] as const;
+export const projectsData = [
+  {
+    title: "Bento 0.2",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "Framer motion", "Tailwind"],
+    imageUrl: "/projectImages/bento.png",
+    url:""
+  },
+  
+  {
+    title: "Promptobia",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js","Tailwind", "MongoDB", "Mongoess" ],
+    imageUrl: "/projectImages/promptobia.png",
+    url:""
+  },
+  {
+    title: "Travelia",
+    description:
+      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    tags: ["HTML", "CSS", "JS", "SASS"],
+    imageUrl: "/projectImages/travelia.png",
+    url:""
+  },
+  {
+    title: "MetaVerse",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "Framer motion", "Tailwind"],
+    imageUrl: "/projectImages/metaverse.png",
+    url:""
+  },
+  {
+    title: "Medium 0.2",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js","Tailwind", "Sanity"],
+    imageUrl: "/projectImages/medium.png",
+    url:""
+  },
+] as const;
 
 export const skillsData = [
   "HTML",
@@ -100,11 +118,9 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
   "Framer Motion",
 ] as const;
+// "Prisma",
