@@ -80,7 +80,7 @@ html{
 /* //////////////////////////////////////// */
 /* vertical infinity scroll */
 .slider{
-  @apply w-[350px] md:w-[550px]  ;
+  @apply w-[350px] md:w-[650px]  ;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -88,7 +88,7 @@ html{
 }
 .slider-track{
   display: flex;
-  width: calc(18*120px);
+  width: calc(22*80px);
   animation:  scrollVertical 15s  linear infinite;
   -webkit-animation:  scrollVertical 15s  linear infinite;
 }
@@ -96,14 +96,14 @@ html{
   @apply shadow-xl ;
   font-weight: bold;
   font-size: 40px;
-  width: 120px;
+  width: 80px;
   box-sizing: border-box;
   margin: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 0px;
-  background: #e9e9e9;
+  background: #f0f0f0;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -119,11 +119,11 @@ html{
     -o-transform: translateX(0px);
 }
   100%{
-    transform: translateX(calc(-120*9px) );
-    -webkit-transform: translateX(calc(-120*9px) );
-    -moz-transform: translateX(calc(-120*9px) );
-    -ms-transform: translateX(calc(-120*9px) );
-    -o-transform: translateX(calc(-120*9px) );
+    transform: translateX(calc(-80*11px) );
+    -webkit-transform: translateX(calc(-80*11px) );
+    -moz-transform: translateX(calc(-80*11px) );
+    -ms-transform: translateX(calc(-80*11px) );
+    -o-transform: translateX(calc(-80*11px) );
 }
 }
 .slider::before,

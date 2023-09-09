@@ -73,7 +73,8 @@ export const projectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/bento.png",
-    url:""
+    demoUrl:"",
+    repoUrl:""
   },
   
   {
@@ -82,7 +83,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js","Tailwind", "MongoDB", "Mongoess" ],
     imageUrl: "/projectImages/promptobia.png",
-    url:""
+    demoUrl:"",
+    repoUrl:""
   },
   {
     title: "Travelia",
@@ -90,7 +92,8 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["HTML", "CSS", "JS", "SASS"],
     imageUrl: "/projectImages/travelia.png",
-    url:""
+    demoUrl:"",
+    repoUrl:""
   },
   {
     title: "MetaVerse",
@@ -98,7 +101,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/metaverse.png",
-    url:""
+    demoUrl:"",
+    repoUrl:""
   },
   {
     title: "Medium 0.2",
@@ -106,7 +110,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js","Tailwind", "Sanity"],
     imageUrl: "/projectImages/medium.png",
-    url:""
+    demoUrl:"",
+    repoUrl:""
   },
 ] as const;
 

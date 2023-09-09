@@ -4,7 +4,7 @@ import React from 'react'
 
 function Skills() {
   return (
-    <section className='flex justify-center items-center flex-col gap-8'>
+    <section id="skills" className='flex justify-center items-center flex-col gap-8 scroll-m-28 '>
       <div className="flex justify-center items-center flex-col gap-3">
         <h1 className='headerText'>Skills</h1>
         <h1 className='subText'>my all skills my all skills my all skills my all skills</h1>
@@ -13,12 +13,12 @@ function Skills() {
         <div className="slider-track">
           {skillsData.map((skill,index )=>(
             <div className="slide" key={index}>
-              <Image src={`/skillsSVG/${skill}.svg`} alt={`${skill}-logo` } width={60} height={60}/>
+              <Image src={`/skillsSVG/${skill}.svg`} alt={`${skill}-logo` } width={60} height={40}/>
             </div>
           ))}
           {skillsData.map((skill,index )=>(
             <div className="slide" key={index}>
-              <Image src={`/skillsSVG/${skill}.svg`} alt={`${skill}-logo` } width={60} height={60}/>
+              <Image src={`/skillsSVG/${skill}.svg`} alt={`${skill}-logo` } width={60} height={40}/>
             </div>
           ))}
           {/*<div className="slide">

@@ -1,6 +1,8 @@
-import Header from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
+
+import ActiveSectionContext from '@/context/active-section-context'
+import Header from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +16,6 @@ export default function RootLayout({children,}:{ children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-gray-50 text-gray-900 relative`}>
-      <Header/>
         <div className="bg-[#ffccce] absolute top[-6rem] -z-10
           right-[5rem]
           md:right-[10rem] h-[32rem] w-[32rem] sm:w-[68rem]
@@ -27,7 +28,10 @@ export default function RootLayout({children,}:{ children: React.ReactNode }) {
           rounded-full blur-[9rem] 
           ">        
         </div>
-        {children}
+        <ActiveSectionContext>
+          <Header/>
+          {children}
+        </ActiveSectionContext>
       </body>
     </html>
   )

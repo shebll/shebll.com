@@ -1,13 +1,22 @@
+"use client"
+import { useActiveSection } from "@/context/active-section-context"
 import { projectsData } from "@/lib/data"
+import { useInView } from "framer-motion"
 import Image from "next/image"
-import Link from "next/link"
+import { useRef } from "react"
 type props={
   project: (typeof projectsData)[number] 
 }
 function Project({project} : props) {
+  const refSection = useRef(null)
+  const isView = useInView(refSection,{amount:0.5})
+  const {setActiveSection}=useActiveSection()
+  if(isView){
+    setActiveSection("Projects");
+  }
   return (
-      <section className="group projectCard flex flex-row-reverse even:flex-row gap-8 w-[800px] overflow-hidden
-        bg-gray-200 hover:bg-gray-300 rounded-2xl shadow-2xl transition-all ">
+      <section ref={refSection} className="group projectCard flex flex-row-reverse even:flex-row gap-8 md:w-[800px] overflow-hidden
+        bg-gray-200 hover:bg-gray-300 rounded-2xl shadow-2xl transition-all">
         <div className="px-10 py-14 flex justify-start flex-col flex-1 gap-6  ">
           <h1 className="text-2xl font-semibold uppercase  ">
             {project.title} 
@@ -23,14 +32,14 @@ function Project({project} : props) {
             ))}
 
           </ul>
-          <div className="flex  flex-row gap-4 mt-5">
-          <a href="/" className="btn primary">live Demo <Image src={"/skillsSVG/linkLogo.png"} alt="linkLogo" width={22} height={22}/></a>
-          <a href="/" className="btn">Repo <Image src={"/skillsSVG/git2logo.png"} alt="Git logo" width={22} height={22}/> </a>
+          <div className="flex flex-col  md:flex-row gap-4 mt-5">
+          <a href={project.demoUrl} className="btn primary">live Demo<Image src={"/skillsSVG/linkLogo.png"} alt="linkLogo" width={22} height={22}/></a>
+          <a href={project.repoUrl} className="btn">Repo <Image src={"/skillsSVG/git2logo.png"} alt="Git logo" width={22} height={22}/> </a>
           </div>
         </div>
-        <div className="relative flex-1 p-4">
+        <div className="relative flex-1 p-4 hidden md:block">
           <Image  src={project.imageUrl} alt="project image" width={560} height={560}
-            className="absolute group-even:left-10 group-odd:right-10 bottom-[-10px] scale-[1.4] transition-all rounded-2xl shadow-2xl 
+            className="absolute group-even:left-10 group-odd:right-10 bottom-[33px] scale-[1.4] transition-all rounded-2xl shadow-2xl 
           "/>
         </div>
       </section>  

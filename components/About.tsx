@@ -1,13 +1,14 @@
 "use client"
+import { useActiveSection } from '@/context/active-section-context';
 import { variantsQ } from '@/utils/variants';
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useInView, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react';
 
 function About() {
-  const  refVideo =useRef<HTMLInputElement>(null);
+  const  refSection =useRef<HTMLInputElement>(null);
 
   const {scrollYProgress }=useScroll({
-    target :refVideo,
+    target :refSection,
     offset:["center end", "end 600px"]
   })
   const Q1TranslateX=useTransform(scrollYProgress ,[0,1],["0px","240px"])
@@ -26,8 +27,13 @@ function About() {
   const Q5TranslateX=useTransform(scrollYProgress ,[0,1],["0px","-210px"])
   const Q5Rotate=useTransform(scrollYProgress ,[0,1],[3,26])
   //////////
+  const isView = useInView(refSection,{amount:0.5})
+  const {setActiveSection}=useActiveSection()
+  if(isView){
+    setActiveSection("About");
+  }
   return (
-    <section ref={refVideo} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
+    <section ref={refSection} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
       <div className="flex justify-center items-center flex-col gap-4">
         <h1 className='headerText'>About Me</h1>
         <p className='subText'>here about my section</p>

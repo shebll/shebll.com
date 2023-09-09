@@ -1,13 +1,13 @@
 "use client"
-import { links } from "@/lib/data"
-import { LazyMotion, domAnimation, m } from "framer-motion"
-import {usePathname} from "next/navigation"
 
+import { LazyMotion, domAnimation, m } from "framer-motion"
+import { useActiveSection } from "@/context/active-section-context"
 import Link from "next/link"
 
-function Header() {
-  const currentPath= usePathname() 
+import { links } from "@/lib/data"
 
+function Header() {
+  const {activeSection, setActiveSection}=useActiveSection()
   return (
   <LazyMotion features={domAnimation}>      
     <div className="fixed w-full z-50 flex justify-center sm:top-[30px]">
@@ -23,13 +23,15 @@ function Header() {
             initial={{y:-100 ,filter:"blur(3px)"}}
             animate={{y:0 ,filter:"blur(0px)"}}
             transition={{ duration: 1, type: "tween", stiffness: 50 , delay:0.4+(0.09 *index)}}>
-              <Link href={link.hash} 
-              className="relative z-10 px-4 py-2 flex justify-center items-center 
-              text-gray-600 hover:text-gray-900 transition font-medium"
+              <Link href={link.hash}
+              onClick={()=>setActiveSection(link.name)}
+              className={`relative z-10 px-4 py-2 flex justify-center items-center 
+              text-gray-600 hover:text-gray-900 transition font-medium
+                ${link.name === activeSection ? "!text-gray-100 hover:text-gray-100":""}`}
               >
-                {/* {link.hash === currentPath.split("#")[1] && (
-                  <motion.span layoutId='underline' className='w-full absolute h-full bg-green-400 rounded-full -z-10' />
-                )} */}
+                {link.name === activeSection && (
+                  <m.span layoutId='underline' className='w-full absolute h-full bg-[#0b0a1d] rounded-full -z-10' />
+                )}
                   {link.name} 
               </Link>
             </m.div>

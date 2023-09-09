@@ -1,25 +1,33 @@
 "use client"
 import { ImageVariants, TextVariants, btnVariants, waveVariants } from "@/utils/variants"
-import { LazyMotion, domAnimation, m } from "framer-motion"
+import { LazyMotion, domAnimation, m, useInView } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs"
 import { BsDownload } from "react-icons/bs"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 import Image from "next/image"
 import Link from "next/link"
+import { useRef } from "react"
+import { useActiveSection } from "@/context/active-section-context"
 
 
 function Inter() {
+  const refSection = useRef(null)
+  const isView = useInView(refSection,{amount:0.5})
+  const {setActiveSection}=useActiveSection()
+  if(isView){
+    setActiveSection("Home");
+  }
   return (
-  <LazyMotion features={domAnimation}>   
-    <section className="pt-[200px] flex justify-center items-center flex-col gap-12">
+  <LazyMotion features={domAnimation} >   
+    <section ref={refSection} className="pt-[200px] flex justify-center items-center flex-col gap-12">
       <div className="flex justify-center items-center flex-col relative">
         <m.div variants={ImageVariants} initial={"initial"} animate={"animate"}>
           <Image src={"/shebllImage.jpeg"} alt="shebll image" priority={true} quality={92} width={150} height={100}
             className="rounded-full bg-cover border-[3px] border-white shadow-xl pointer-events-none "/>
         </m.div>
         <m.span variants={waveVariants} initial={"initial"} animate={"animate"}
-          className="hi bottom-0 text-5xl right-2 absolute pointer-events-none">👋</m.span>
+          className="hi bottom-0 text-5xl right-2 absolute pointer-events-none">👋🏽</m.span>
       </div>
       <div className="flex justify-center items-center  flex-col gap-8">
         <m.h1 variants={TextVariants} initial={"initial"} animate={"animate"}
