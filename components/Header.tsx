@@ -11,13 +11,13 @@ function Header() {
   return (
   <LazyMotion features={domAnimation}>      
     <div className="fixed w-full z-50 flex justify-center sm:top-[30px]">
-      <m.header className='py-3 px-8 rounded-none  sm:rounded-full border-white border-opacity-50
-    bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]'
+      <m.header className=' px-7 py-3 flex justify-center items-center rounded-none  sm:rounded-full border-white border-opacity-50
+    bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] overflow-hidden'
       initial={{y:-100, opacity:0}}
       animate={{y:0, opacity:1}}
       transition={{ duration: 1, type: "spring", stiffness: 50 }}
       >
-        <nav className="flex gap-4 gap-y-2 justify-center flex-wrap overflow-hidden">
+        <nav className="flex gap-4 gap-y-2 justify-center flex-wrap ">
           {links.map((link,index) =>(
             <m.div key={index}
             initial={{y:-100 ,filter:"blur(3px)"}}
@@ -30,7 +30,7 @@ function Header() {
                 ${link.name === activeSection ? "!text-gray-100 hover:text-gray-100":""}`}
               >
                 {link.name === activeSection && (
-                  <m.span layoutId='underline' className='w-full absolute h-full bg-[#0b0a1d] rounded-full -z-10' />
+                  <m.span layoutId='underline' className=' inset-0  absolute bg-[#0b0a1d] rounded-full -z-10' />
                 )}
                   {link.name} 
               </Link>

@@ -147,12 +147,18 @@ top: 0;
 /* Question style  */
 .Question{
   @apply absolute flex justify-center items-center text-[24px] py-2 px-8 font-semibold text-gray-50 shadow-xl rounded-full  ;
-  background-image: linear-gradient(180deg, #3e7fff, #50a8ff);
-  box-shadow: 0 0 50px 2px rgba(103, 154, 204, 0.3);
+  /* background-image: linear-gradient(180deg, #3e7fff, #50a8ff);*/
+  /* box-shadow: 0 0 50px 2px rgba(103, 154, 204, 0.3);  */
+  background-image: linear-gradient(180deg, #2f70f1, #53a9ff);
+  box-shadow: 0px 10px 10px 0px rgba(103, 141, 179, 0.301);
   
 }
+.skill{
+  background-image: linear-gradient(180deg, #2f70f1, #53a9ff);
+  box-shadow: 0px 9px 10px 0px rgb(104 136 167 / 48%);
+}
 /* Question style  */
-/*  */
+/* projectCard */
 .projectCard:nth-child(odd):hover div > img{
   transition: .3s ease-in-out;
   transform: rotate(4deg) scale(1.44);
@@ -178,4 +184,22 @@ top: 0;
   -ms-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
 }
-/*  */
+/* projectCard */
+/* cardExperience */
+.cardExperience::after{
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  top: 12px;
+}
+.cardExperience:nth-child(odd):after{
+  border-color: transparent rgb(229 231 235 ) transparent transparent;
+  left: 30px;
+}
+.cardExperience:nth-child(even)::after{
+  border-color: transparent transparent transparent rgb(229 231 235 );
+  right: 30px;
+}
+
+
+/* cardExperience */

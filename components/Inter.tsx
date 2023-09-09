@@ -1,23 +1,23 @@
 "use client"
 import { ImageVariants, TextVariants, btnVariants, waveVariants } from "@/utils/variants"
 import { LazyMotion, domAnimation, m, useInView } from "framer-motion"
-import { BsArrowRight } from "react-icons/bs"
-import { BsDownload } from "react-icons/bs"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 import Image from "next/image"
 import Link from "next/link"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { useActiveSection } from "@/context/active-section-context"
 
 
 function Inter() {
-  const refSection = useRef(null)
+  const refSection = useRef (null)
   const isView = useInView(refSection,{amount:0.5})
   const {setActiveSection}=useActiveSection()
-  if(isView){
-    setActiveSection("Home");
-  }
+  useEffect(()=>{
+    if(isView){
+      setActiveSection("Home");
+    }
+  },[isView ,setActiveSection])
+  
   return (
   <LazyMotion features={domAnimation} >   
     <section ref={refSection} className="pt-[200px] flex justify-center items-center flex-col gap-12">
@@ -38,19 +38,23 @@ function Inter() {
           sites & apps. My focus is React <Link href={"https://nextjs.org/"} target="blank" className="font-bold underline">( Next.js )</Link>.
         </m.h1>
         <m.div variants={btnVariants} initial={"initial"} animate={"animate"}
-          className="flex justify-center items-center gap-3 flex-col md:flex-row w-[250px] md:w-full">
-          <Link href={"#contact"} className="btn primary">
-            Contact Me 
-            <BsArrowRight/>
+          className="flex justify-center items-stretch gap-3 flex-col md:flex-row w-[250px] md:w-full">
+          <Link href={"#contact"} className="btn primary flex justify-center items-center">
+            Contact Me here
+            <span className="text-[22px] relative top-[-3px]" >📨</span>
           </Link>
-          <a className="btn" href="/cv.pdf" download={true}>
+          <a className="btn btn flex justify-center items-center" href="/cv.pdf" download={true}>
             Download CV
-            <BsDownload/>
+            <span className="text-[19.5px]">📑</span>
           </a>
-          <Link className="btn rounded-full" href={"https://www.linkedin.com/in/ahmed-shebl-07a331268/"}target="blank" >
-            <FaLinkedinIn/>
+          <Link className="btn rounded-full btn flex justify-center items-center"
+            href={"https://www.linkedin.com/in/ahmed-shebl-07a331268/"}target="blank">
+            <Image src={"/skillsSVG/icon-linkedin.svg"} alt="Git logo" width={26} height={26} />
           </Link>
-          <Link className="btn" href={"https://github.com/shebll"} target="blank"><FaGithub/></Link>
+          <Link className="btn btn flex justify-center items-center"
+            href={"https://github.com/shebll"} target="blank">
+            <Image src={"/skillsSVG/icons8-git (1).svg"} alt="Git logo" width={26} height={26} />
+          </Link>
         </m.div>
       </div>
     </section>

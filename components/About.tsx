@@ -2,11 +2,17 @@
 import { useActiveSection } from '@/context/active-section-context';
 import { variantsQ } from '@/utils/variants';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 function About() {
-  const  refSection =useRef<HTMLInputElement>(null);
-
+  const  refSection =useRef<HTMLElement>(null);
+  const isView = useInView(refSection,{amount:0.5})
+  const {setActiveSection}=useActiveSection()
+  useEffect(()=>{
+    if(isView){
+      setActiveSection("About");
+    }
+  },[isView ,setActiveSection])
   const {scrollYProgress }=useScroll({
     target :refSection,
     offset:["center end", "end 600px"]
@@ -27,11 +33,7 @@ function About() {
   const Q5TranslateX=useTransform(scrollYProgress ,[0,1],["0px","-210px"])
   const Q5Rotate=useTransform(scrollYProgress ,[0,1],[3,26])
   //////////
-  const isView = useInView(refSection,{amount:0.5})
-  const {setActiveSection}=useActiveSection()
-  if(isView){
-    setActiveSection("About");
-  }
+
   return (
     <section ref={refSection} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
       <div className="flex justify-center items-center flex-col gap-4">
