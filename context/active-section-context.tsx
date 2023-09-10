@@ -1,10 +1,9 @@
 "use client"
 
-import { links } from "@/lib/data"
-import { error } from "console"
+import type { sectionsName } from "@/types/typing"
 import { createContext, useContext, useState } from "react"
 
-type sectionsName = (typeof links[number])["name"]
+
 type contextActiveSectionType ={
   activeSection:sectionsName ,
   setActiveSection :React.Dispatch<React.SetStateAction<sectionsName>>

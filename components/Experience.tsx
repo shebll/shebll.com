@@ -1,21 +1,11 @@
 "use client"
-
-import { useActiveSection } from "@/context/active-section-context"
 import { experiencesData } from "@/lib/data"
-import { useInView } from "framer-motion"
-import { useEffect, useRef } from "react"
+import useActiveSectionInView from "@/utils/hooks/useActiveSectionInView"
 
-function Experience() {
-  const refSection = useRef<HTMLElement>(null)
-  const isView = useInView(refSection,{amount:0.5})
-  const {setActiveSection}=useActiveSection()
-  useEffect(()=>{
-    if(isView){
-      setActiveSection("Experience");
-    }
-  },[isView ,setActiveSection])
+function Experience() {  
+  const {refSection} =useActiveSectionInView({sectionName:"Experience" ,amount:0.5})
   return (
-    <section ref={refSection} id="experience" className="flex flex-col justify-center items-center gap-8">
+    <section ref={refSection} id="experience" className="flex flex-col justify-center items-center gap-8 scroll-m-28">
       <div className="flex justify-center items-center flex-col gap-3">
         <h1 className='headerText'>Experience</h1>
         <h1 className='subText'>my all Experience</h1>

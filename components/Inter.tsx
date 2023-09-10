@@ -1,23 +1,15 @@
 "use client"
 import { ImageVariants, TextVariants, btnVariants, waveVariants } from "@/utils/variants"
-import { LazyMotion, domAnimation, m, useInView } from "framer-motion"
+import { LazyMotion, domAnimation, m } from "framer-motion"
+import useActiveSectionInView from "@/utils/hooks/useActiveSectionInView"
 
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef } from "react"
-import { useActiveSection } from "@/context/active-section-context"
 
 
 function Inter() {
-  const refSection = useRef (null)
-  const isView = useInView(refSection,{amount:0.5})
-  const {setActiveSection}=useActiveSection()
-  useEffect(()=>{
-    if(isView){
-      setActiveSection("Home");
-    }
-  },[isView ,setActiveSection])
-  
+  const {refSection} =useActiveSectionInView({sectionName:"Home" ,amount:0.5})
+
   return (
   <LazyMotion features={domAnimation} >   
     <section ref={refSection} className="pt-[200px] flex justify-center items-center flex-col gap-12">
