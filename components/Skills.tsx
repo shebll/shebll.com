@@ -5,7 +5,7 @@ import useActiveSectionInView from '@/utils/hooks/useActiveSectionInView'
 function Skills() {
   const {refSection} =useActiveSectionInView({sectionName:"Skills" ,amount:0.5})
   return (
-    <section ref={refSection} id="skills" className='flex justify-center items-center flex-col gap-8 scroll-m-28 max-w-[1400px] '>
+    <section ref={refSection} id="skills" className='flex justify-center items-center flex-col gap-12 scroll-m-28 max-w-[1400px] '>
       <div className="flex justify-center items-center flex-col gap-3">
         <h1 className='headerText'>Skills</h1>
         <h1 className='subText'>my all skills my all skills my all skills my all skills</h1>

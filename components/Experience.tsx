@@ -5,7 +5,7 @@ import useActiveSectionInView from "@/utils/hooks/useActiveSectionInView"
 function Experience() {  
   const {refSection} =useActiveSectionInView({sectionName:"Experience" ,amount:0.5})
   return (
-    <section ref={refSection} id="experience" className="flex flex-col justify-center items-center gap-8 scroll-m-28">
+    <section ref={refSection} id="experience" className="flex flex-col justify-center items-center gap-12 scroll-m-28">
       <div className="flex justify-center items-center flex-col gap-3">
         <h1 className='headerText'>Experience</h1>
         <h1 className='subText'>my all Experience</h1>
@@ -25,6 +25,7 @@ function Experience() {
         ))}
 
       </div>
+      
       <div className="lg:hidden flex flex-col justify-center gap-6 ">
         {experiencesData.map((item,index)=>(
             <div key={index} className="flex gap-6 justify-center items-start flex-col  

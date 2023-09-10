@@ -1,9 +1,7 @@
 "use client"
-import { useActiveSection } from '@/context/active-section-context';
 import useActiveSectionInView from '@/utils/hooks/useActiveSectionInView';
-import { variantsQ } from '@/utils/variants';
-import { motion, useInView, useScroll, useTransform } from 'framer-motion'
-import { useEffect, useRef } from 'react';
+import { variantsQ } from '@/utils/motion/variants';
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function About() {
   const {refSection} =useActiveSectionInView({sectionName:"About" ,amount:0.5})
@@ -12,7 +10,7 @@ function About() {
     target :refSection,
     offset:["center end", "end 600px"]
   })
-  
+
   const Q1TranslateX=useTransform(scrollYProgress ,[0,1],["0px","240px"])
   const Q1Rotate=useTransform(scrollYProgress ,[0,1],[3,26])
   //////////
