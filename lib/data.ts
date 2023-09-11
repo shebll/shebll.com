@@ -30,7 +30,7 @@ export const experiencesData = [
     title: "Computer Science Student",
     location: "Egypt, Cairo University",
     description:
-      "I will be graduated in 2024/8/8, After 4 years of studying computer science specific information system. I have learned the fundamental of programming and principles of software and fundamental of database, warehouse, design pattern, web, API, AI ...etc",
+      "Throughout my academic journey, I have acquired a comprehensive understanding of various programming fundamentals, including essential concepts, object-oriented programming (OOP), SOLID principles, design patterns, algorithms, data structures, databases, and data warehousing. These foundational skills have equipped me with a solid understanding of the core principles and best practices in the field of computer science.",
     icon: "🎓",
     date: "2020 - present",
   },  

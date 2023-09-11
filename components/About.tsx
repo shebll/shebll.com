@@ -35,10 +35,12 @@ function About() {
       </div>
       <div className="w-[350px] md:w-[650px] flex flex-col gap-4">
         <span className='paragraph dark:!text-gray-50'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorum repudiandae cupiditate maxime illum obcaecati qui officiis!  Magnam nostrum eos earum, error voluptatum, sunt quos, et ipsum voluptatem vel doloremque?
+        My name is Ahmed Mohamed, and I&apos;m a 21-year-old student studying computer science at Cairo University, specializing in Information Systems. I&apos;m  currently in my fourth year of studies. I reside in Cairo, Egypt.
+
+        {/* I am dedicated to further expanding my knowledge and honing my programming skills to excel in the ever-evolving world of technology. */}
         </span>
         <span className='paragraph dark:!text-gray-50'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorum repudiandae cupiditate maxime illum obcaecati qui officiis! Magnam nostrum eos earum, error voluptatum, sunt quos, et ipsum voluptatem vel doloremque?
+        I&apos;m deeply passionate about creating exceptional websites and apps using Next.js and React. With extensive experience in the field, I possess a confident mastery of Framer Motion, enabling me to craft professional and visually stunning user experiences.
         </span>
       </div>   
       <div className="hidden xl:block">
@@ -58,7 +60,7 @@ function About() {
           style={{rotate:Q2Rotate,translateX:Q2TranslateX}}
           className="Question top-[22%] left-0
         ">
-          What Is your university ?                
+          What Is Your Passion ?                
         </motion.div>
         <motion.div
           variants={variantsQ}
