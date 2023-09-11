@@ -8,19 +8,19 @@ function Skills() {
     <section ref={refSection} id="skills" className='flex justify-center items-center flex-col gap-12 scroll-m-28 max-w-[1400px] '>
       <div className="flex justify-center items-center flex-col gap-3">
         <h1 className='headerText'>Skills</h1>
-        <h1 className='subText'>my all skills my all skills my all skills my all skills</h1>
+        <h1 className='subText'>My All Skills In Related Field And Fundamentals .</h1>
       </div>
       <div className="flex gap-6 justify-center items-stretch flex-col lg:flex-row ">
         {skillsData.map((track,index)=>(
           <div key={index} className="flex gap-8 justify-start items-center flex-col flex-1 
-            flex-wrap rounded-md shadow-xl bg-gray-200 px-8 py-10">
+            flex-wrap rounded-md shadow-xl bg-gray-200 px-8 py-10 dark:bg-[#17181c] ">
             <div className="flex gap-4 justify-center items-center flex-col">
               <div className="text-3xl font-bold ">{track.name}</div>
               <div className="text-lg font-medium text-gray-500 ">{track.description}</div>
             </div>
             <ul className="flex flex-row flex-wrap gap-4">
                 {track.skills.map((skill,index)=>(
-                  <li key={index} className="skill px-3 py-2 rounded-md shadow-xl text-white font-semibold ">
+                  <li key={index} className="skill px-3 py-2 rounded-md text-white font-semibold ">
                     {skill}
                   </li>
                 ))}

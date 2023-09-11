@@ -15,7 +15,7 @@ function Inter() {
     <section ref={refSection} className="pt-[147px] lg:pt-[200px] flex justify-center items-center flex-col gap-12">
       <div className="flex justify-center items-center flex-col relative">
         <m.div variants={ImageVariants} initial={"initial"} animate={"animate"}>
-          <Image src={"/personalImages/shebllImage.jpeg"} alt="shebll image" priority={true} quality={92} width={150} height={100}
+          <Image src={"/personalImages/shebllImage.png"} alt="shebll image" priority={true} quality={92} width={150} height={100}
             className="rounded-full bg-cover border-[3px] border-white shadow-xl pointer-events-none "/>
         </m.div>
         <m.span variants={waveVariants} initial={"initial"} animate={"animate"}

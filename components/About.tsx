@@ -31,13 +31,13 @@ function About() {
     <section ref={refSection} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
       <div className="flex justify-center items-center flex-col gap-4">
         <h1 className='headerText'>About Me</h1>
-        <p className='subText'>here about my section</p>
+        <p className='subText'>Answer Of All Question In Your Mind . </p>
       </div>
       <div className="w-[350px] md:w-[650px] flex flex-col gap-4">
-        <span className='paragraph'>
+        <span className='paragraph dark:!text-gray-50'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorum repudiandae cupiditate maxime illum obcaecati qui officiis!  Magnam nostrum eos earum, error voluptatum, sunt quos, et ipsum voluptatem vel doloremque?
         </span>
-        <span className='paragraph'>
+        <span className='paragraph dark:!text-gray-50'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorum repudiandae cupiditate maxime illum obcaecati qui officiis! Magnam nostrum eos earum, error voluptatum, sunt quos, et ipsum voluptatem vel doloremque?
         </span>
       </div>   
@@ -49,7 +49,7 @@ function About() {
           style={{rotate:Q1Rotate,translateX:Q1TranslateX}}
           className="Question top-[14%] right-0
         ">
-          what are u stady?        
+          What Are U Study ?        
         </motion.div>
         <motion.div
           variants={variantsQ}
@@ -58,7 +58,7 @@ function About() {
           style={{rotate:Q2Rotate,translateX:Q2TranslateX}}
           className="Question top-[22%] left-0
         ">
-          what is your university?                
+          What Is your university ?                
         </motion.div>
         <motion.div
           variants={variantsQ}
@@ -67,7 +67,7 @@ function About() {
           style={{rotate:Q3Rotate,translateX:Q3TranslateX}}
           className="Question top-[40%] right-2
         ">
-          how old are you ?        
+          How Old Are You ?        
         </motion.div>        
         <motion.div
           variants={variantsQ}
@@ -76,7 +76,7 @@ function About() {
           style={{rotate:Q4Rotate,translateX:Q4TranslateX}}
           className="Question top-[46%] left-2
         ">
-        where do live ?   
+        Where Do Live ?   
         </motion.div>        
         <motion.div
           variants={variantsQ}

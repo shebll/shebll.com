@@ -35,15 +35,15 @@ export const experiencesData = [
     date: "2020 - present",
   },  
   {
-    title: "Web Development Intern",
+    title: "Web Development Internship",
     location: "Cairo, CodeSoft",
     description:
-      "I worked Web Development Interner in CodeSoft learned basic of Web Development and make awesome project through this journey.",
+      "I take a Web Development Internship in CodeSoft learned basic of Web Development and make awesome project through this journey.",
     icon: "💻",
     date: "2023/8/30 - present",
   },
   {
-    title: "Full-Stack Developer Intern",
+    title: "Full-Stack Developer Internship",
     location: "Cairo, GrowIntern",
     description:
       "Get a awesome internship as full-stack developer with GrowIntern . My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB.",
@@ -64,26 +64,44 @@ export const projectsData = [
   {
     title: "Bento 0.2",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I worked as a freelancer front-end developer on Upwork project for client project , the client want to copy Bento landing page which is has a lot of animation and user interaction , review from the client",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/bento.png",
     demoUrl:"https://bentoclone.vercel.app/",
     repoUrl:"https://github.com/shebll/bento"
   },
-  
+  {
+    title: "Medium 0.2",
+    description:
+      "I worked as full-stack developer in this project to practice on next.js, making API, and Sanity.io as CMS  ",
+    tags: ["React", "Next.js","Tailwind", "Sanity","API"],
+    imageUrl: "/projectImages/medium.png",
+    demoUrl:"https://github.com/shebll/medium-blog-site",
+    repoUrl:"https://medium-blog-site-ebtq.vercel.app/"
+  },
   {
     title: "Promptobia",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js","Tailwind", "MongoDB", "Mongoess" ],
+    "I worked as full-stack developer in this project to practice on next.js, making API, and MongoDB ",
+    tags: ["React", "Next.js","Tailwind", "MongoDB", "Mongoess" ,"Next-auth","google-auth" ],
     imageUrl: "/projectImages/promptobia.png",
     demoUrl:"https://promptopia-project-iota.vercel.app/",
     repoUrl:"https://github.com/shebll/PromptopiaProject"
   },
+  
+  {
+    title: "Agency Page",
+    description:
+      "I worked as front-end developer in this project to practice on HTML, CSS, and JS",
+    tags: ["HTML", "CSS", "JS", "SASS"],
+    imageUrl: "/projectImages/agency.png",
+    demoUrl:"https://shebll.github.io/agency-landing-page/",
+    repoUrl:"https://github.com/shebll/agency-landing-page"
+  },
   {
     title: "Travelia",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "I worked as front-end developer in this project to practice on HTML, CSS, and JS",
     tags: ["HTML", "CSS", "JS", "SASS"],
     imageUrl: "/projectImages/travelia.png",
     demoUrl:"https://shebll.github.io/Travelia/",
@@ -92,21 +110,13 @@ export const projectsData = [
   {
     title: "MetaVerse",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "I worked as front-end developer in this project to practice on Framer motion, Tailwind, and Next.js",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/metaverse.png",
     demoUrl:"https://metaversus-landing-page-iota.vercel.app/",
     repoUrl:"https://github.com/shebll/METAVERSUS-LANDING-PAGE"
   },
-  {
-    title: "Medium 0.2",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js","Tailwind", "Sanity"],
-    imageUrl: "/projectImages/medium.png",
-    demoUrl:"https://github.com/shebll/medium-blog-site",
-    repoUrl:"https://medium-blog-site-ebtq.vercel.app/"
-  },
+
 ] as const;
 
 export const skillsData = [
@@ -142,6 +152,8 @@ export const skillsData = [
     name: "Fundamentals",
     skills:[    
       "SOLID Principals",
+      "Software Principals",
+      "Agile",
       "Design Pattern ",
       "DataBase",
       "Data Structure",

@@ -11,8 +11,8 @@ function Contact() {
       <div className="flex justify-center items-center flex-col gap-4">
         <h1 className="headerText">Contact Me.</h1>
         <p className="subText">Please Contact Me Directly At &nbsp;
-          <a href="mailto:ahmed@shebll.com" className="underline text-[#0b0a1d]">ahmed@shebll.com</a>
-          &nbsp;Or Through This Form
+          <a href="mailto:ahmed@shebll.com" className="underline text-[#0b0a1d] dark:text-gray-50">ahmed@shebll.com</a>
+          &nbsp;Or Through This Form .
         </p>
       </div>
       <form action={async (formData)=>{
@@ -25,9 +25,9 @@ function Contact() {
         return;
       }} className="flex justify-center items-center w-full flex-col gap-4">
         <input type="email" name="senderEmail" placeholder="Enter Your Email " required maxLength={500}
-          className="bg-white rounded-xl shadow-md p-5 w-full focus:outline-[#0b0a1da8]"/>
+          className="bg-white rounded-xl shadow-md p-5 w-full focus:outline-[#0b0a1da8] dark:bg-[#17181c] "/>
         <textarea name="message" placeholder="Enter Your Message" required maxLength={5000}
-          className="bg-white  rounded-xl shadow-xl p-5 w-full min-h-[200px] max-h-[400px] focus:outline-[#0b0a1da8]"/>
+          className="bg-white  rounded-xl shadow-xl p-5 w-full min-h-[200px] max-h-[400px] focus:outline-[#0b0a1da8] dark:bg-[#17181c]"/>
       {/* <button type="submit" className="btn primary !w-full "> sd</button> */}
       <BtnContactForm/>
       </form>

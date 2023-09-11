@@ -9,7 +9,7 @@ function Divider() {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     viewport={{once:true}}
-    transition={{delay:2.5}}  className='h-[100px] w-1 bg-[#e1e1e1] blur-[2px]'>     
+    transition={{delay:2.5}}  className='h-[100px] w-1 bg-[#e1e1e1] blur-[2px] dark:bg-[#2b2f4196]'>     
     </m.div>
     </LazyMotion>
   )

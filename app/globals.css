@@ -156,7 +156,9 @@ top: 0;
 .skill{
   background-image: linear-gradient(180deg, #2f70f1, #53a9ff);
   box-shadow: 0px 9px 10px 0px rgb(104 136 167 / 48%);
+  @apply shadow-xl dark:!shadow-[#42424275] ;
 }
+
 /* Question style  */
 /* projectCard */
 .projectCard:nth-child(odd):hover div > img{
@@ -191,13 +193,17 @@ top: 0;
   position: absolute;
   border: 10px solid;
   top: 12px;
+  
 }
 .cardExperience:nth-child(odd):after{
+  @apply dark:border-r-[#17181c];
+  border-color: transparent rgb(229 231 235 ) transparent transparent;
   border-color: transparent rgb(229 231 235 ) transparent transparent;
   left: 30px;
 }
 .cardExperience:nth-child(even)::after{
   border-color: transparent transparent transparent rgb(229 231 235 );
+  @apply dark:border-l-[#17181c];
   right: 30px;
 }
 
