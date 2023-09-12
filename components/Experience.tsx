@@ -3,7 +3,7 @@ import { experiencesData } from "@/lib/data"
 import useActiveSectionInView from "@/utils/hooks/useActiveSectionInView"
 
 function Experience() {  
-  const {refSection} =useActiveSectionInView({sectionName:"Experience" ,amount:0.5})
+  const {refSection} =useActiveSectionInView({sectionName:"Experience" ,amount:0.2})
   return (
     <section ref={refSection} id="experience" className="flex flex-col justify-center items-center gap-12 scroll-m-28">
       <div className="flex justify-center items-center flex-col gap-3 ">

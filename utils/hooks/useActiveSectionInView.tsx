@@ -10,6 +10,7 @@ type props={
 function useActiveSectionInView({sectionName ,amount}:props) {
   const refSection = useRef<HTMLElement>(null)
   const isView = useInView(refSection,{amount:amount})
+  // console.log(isView,sectionName)
   const {setActiveSection}=useActiveSection()
   useEffect(()=>{
     if(isView){

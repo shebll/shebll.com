@@ -24,8 +24,8 @@ function Inter() {
       <div className="flex justify-center items-center  flex-col gap-8">
         <m.h1 variants={TextVariants} initial={"initial"} animate={"animate"}
           className="text-[24px] md:text-4xl leading-[33px] md:leading-[46px] text-center tracking-tight">
-          Hello, I&apos;m <span className="font-bold">Ahmed Shebl</span>.
-          I&apos;m a junior <span className="font-bold">Full-Stack Developer</span> <br />
+          Hey, I&apos;m <span className="font-bold">Ahmed Shebl</span>.
+          I&apos;m a junior <span className="font-bold">Software Engineer Front-End</span> <br />
           with <span className="font-bold">1</span> years of experience. I enjoy building<br />
           sites & apps. My focus is React <Link href={"https://nextjs.org/"} target="blank" className="font-bold underline">( Next.js )</Link>.
         </m.h1>

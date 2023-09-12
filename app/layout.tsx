@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Ahmed | Full-Stack Developer',
   description: 'Ahmed Shebl junior Full-Stack Developer With Next.JS | TypeScript | MongoDB | Prisma | ',
-  icons:{icon :'/personalImages/shebllImage.jpeg'}
+  icons:{icon :'/personalImages/shebllImage.png'}
 }
 
 export default function RootLayout({children,}:{ children: React.ReactNode }) {
