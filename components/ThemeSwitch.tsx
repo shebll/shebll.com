@@ -69,9 +69,9 @@ function ThemeSwitch() {
   return (
     <button className='bg-gray-200 border-black/5 shadow-md shadow-[#b9b9b9bb]
       p-2 rounded-full border-[1.4px] 
-      fixed bottom-8 right-10 text-2xl  transition-all
+      fixed bottom-8 right-10 text-lg  transition-all
       hover:scale-[1.1] active:scale-[0.9]
-      dark:bg-[#0b0a1d] dark:border-gray-50 dark:shadow-[#e0da9dbb]'
+      dark:bg-[#0b0a1d] dark:border-gray-50 dark:shadow-[#e0da9dbb] md:text-2xl'
       onClick={ThemeSwitchHandle}>
       {
         theme===""? ("☁️") : (theme === "light" ? ("🌤️"):("🌙") ) 
