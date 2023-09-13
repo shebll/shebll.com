@@ -23,15 +23,16 @@ function About() {
   const Q4TranslateX=useTransform(scrollYProgress ,[0,1],["0px","-280px"])
   const Q4Rotate=useTransform(scrollYProgress ,[0,1],[-8,26])
   //////////
-  const Q5TranslateX=useTransform(scrollYProgress ,[0,1],["0px","-210px"])
-  const Q5Rotate=useTransform(scrollYProgress ,[0,1],[3,26])
+  const Q5TranslateX=useTransform(scrollYProgress ,[0,1],["0px","290px"])
+  const Q5TranslateY=useTransform(scrollYProgress ,[0,1],["-80px","56px"])
+  const Q5Rotate=useTransform(scrollYProgress ,[0,1],[3,-15])
   //////////
 
   return (
     <section ref={refSection} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
       <div className="flex justify-center items-center flex-col gap-4">
         <h1 className='headerText'>About Me</h1>
-        <p className='subText'>Answer Of All Question In Your Mind . </p>
+        <p className='subText'>Answers Of All Questions In Your Mind .</p>
       </div>
       <div className="w-[350px] md:w-[650px] flex flex-col gap-4">
         <span className='paragraph dark:!text-gray-50'>
@@ -51,7 +52,7 @@ function About() {
           style={{rotate:Q1Rotate,translateX:Q1TranslateX}}
           className="Question top-[14%] right-0
         ">
-          What Are U Study ?        
+          What Are You Study ?        
         </motion.div>
         <motion.div
           variants={variantsQ}
@@ -78,16 +79,16 @@ function About() {
           style={{rotate:Q4Rotate,translateX:Q4TranslateX}}
           className="Question top-[46%] left-2
         ">
-        Where Do Live ?   
+        Where do you reside?  
         </motion.div>        
         <motion.div
           variants={variantsQ}
           initial={"hidden"}
           whileInView={"show"}
-          style={{rotate:Q5Rotate,translateX:Q5TranslateX}}
+          style={{rotate:Q5Rotate,translateX:Q5TranslateX ,translateY:Q5TranslateY}}
           className="Question bottom-[10%] left-10
         ">
-          what is your university?       
+          Which university are you attending ?      
         </motion.div> 
       </div>   
     </section>

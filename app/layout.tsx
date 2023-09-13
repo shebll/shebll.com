@@ -10,8 +10,8 @@ import { Toaster } from 'react-hot-toast'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Ahmed | Full-Stack Developer',
-  description: 'Ahmed Shebl junior Full-Stack Developer With Next.JS | TypeScript | MongoDB | Prisma | ',
+  title: 'Ahmed | Software Engineer Front-End',
+  description: 'Ahmed Shebl junior Software Engineer Front-End Developer With Next.JS | TypeScript | MongoDB | Prisma | Framer-Motion',
   icons:{icon :'/personalImages/shebllImage.png'}
 }
 
