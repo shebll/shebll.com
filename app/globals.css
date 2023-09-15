@@ -209,3 +209,12 @@ top: 0;
 
 
 /* cardExperience */
+
+
+.cv{
+  perspective: 1700px ;
+  /* transform-style: preserve-3d; */
+}
+.subCv{
+  perspective: 1700px ;
+}

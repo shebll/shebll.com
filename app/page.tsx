@@ -5,6 +5,7 @@ import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
 import Inter from '@/components/Inter'
 import Projects from '@/components/Projects'
+import Resume from '@/components/Resume'
 import Skills from '@/components/Skills'
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
       <Skills/>
       <Divider/>
       <Experience/>
+      <Divider/>
+      <Resume/>
       <Divider/>
       <Contact/>
     </main>

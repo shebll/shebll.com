@@ -20,6 +20,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Resume",
+    hash: "#resume",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
