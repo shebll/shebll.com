@@ -35,7 +35,7 @@ function Inter() {
             Contact Me here
             <span className="text-[22px] relative top-[-3px]" >📨</span>
           </Link>
-          <a className="btn btn flex justify-center items-center" href="/cv.pdf" download={true}>
+          <a className="btn btn flex justify-center items-center" href="files/cv.pdf" download={true}>
             Download CV
             <span className="text-[19.5px]">📑</span>
           </a>

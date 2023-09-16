@@ -64,7 +64,7 @@ function Resume() {
       <div ref={refText} className="downloadCv text-gray-500 text-4xl md:text-7xl font-bold flex flex-col justify-center items-center gap-4 uppercase  mt-[70px] md:mt-[200px] z-20 relative text-center ">
       A little<br />
       memory!
-      <a className='btn primary'  href="/cv.pdf" download={true}
+      <a className='btn primary'  href="files/cv.pdf" download={true}
       >DOWNLOAD MY CV</a>
       </div>
     </section>
