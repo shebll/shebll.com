@@ -18,7 +18,7 @@ function Header() {
       animate={{y:0, opacity:1}}
       transition={{ duration: 1, type: "spring", stiffness: 50 }}
       >
-        <nav className="flex gap-4 gap-y-2 justify-center flex-wrap ">
+        <nav className="flex gap-4 gap-y-[0.1rem] justify-center flex-wrap ">
           {links.map((link,index) =>(
             <m.div key={index}
             initial={{y:-100 ,filter:"blur(3px)"}}
