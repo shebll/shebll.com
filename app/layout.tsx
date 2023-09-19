@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Ahmed | Software Engineer Front-End',
   description: 'Ahmed Shebl junior Software Engineer Front-End Developer With Next.JS | TypeScript | MongoDB | Prisma | Framer-Motion',
+  //VisualViewport:"width=device-width, initial-scale=1",
   icons:{icon :'/personalImages/shebllImage.png'}
 }
 

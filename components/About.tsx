@@ -29,23 +29,23 @@ function About() {
   //////////
 
   return (
-    <section ref={refSection} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
+    <section role='region' aria-labelledby='about-me-section' ref={refSection} id='about' className='scroll-m-28 flex justify-center items-center flex-col gap-12 relative'>
       <div className="flex justify-center items-center flex-col gap-4">
-        <h1 className='headerText'>About Me</h1>
-        <p className='subText'>Answers Of All Questions In Your Mind .</p>
+        <h1 id='about-me-section' tabIndex={0} className='headerText'>About Me</h1>
+        <p tabIndex={0} className='subText'>Answers To All Questions In Your Mind .</p>
       </div>
       <div className="w-[350px] md:w-[650px] flex flex-col gap-4">
-        <span className='paragraph dark:!text-gray-50'>
+        <h2 className='paragraph dark:!text-gray-50' tabIndex={0}>
         My name is Ahmed Mohamed, and I&apos;m a 21-year-old student studying computer science at Cairo University, specializing in Information Systems. I&apos;m  currently in my fourth year of studies. I reside in Cairo, Egypt.
 
         {/* I am dedicated to further expanding my knowledge and honing my programming skills to excel in the ever-evolving world of technology. */}
-        </span>
-        <span className='paragraph dark:!text-gray-50'>
+        </h2>
+        <h3 className='paragraph dark:!text-gray-50' tabIndex={0}>
         I&apos;m deeply passionate about creating exceptional websites and apps using Next.js and React. With extensive experience in the field, I possess a confident mastery of Framer Motion, enabling me to craft professional and visually stunning user experiences.
-        </span>
+        </h3>
       </div>   
       <div className="hidden xl:block">
-        <motion.div
+        <motion.p
           variants={variantsQ}
           initial={"hidden"}
           whileInView={"show"}
@@ -53,8 +53,8 @@ function About() {
           className="Question top-[14%] right-0
         ">
           What Are You Study ?        
-        </motion.div>
-        <motion.div
+        </motion.p>
+        <motion.p
           variants={variantsQ}
           initial={"hidden"}
           whileInView={"show"}
@@ -62,8 +62,8 @@ function About() {
           className="Question top-[22%] left-0
         ">
           What Is Your Passion ?                
-        </motion.div>
-        <motion.div
+        </motion.p>
+        <motion.p
           variants={variantsQ}
           initial={"hidden"}
           whileInView={"show"}
@@ -71,8 +71,8 @@ function About() {
           className="Question top-[40%] right-2
         ">
           How Old Are You ?        
-        </motion.div>        
-        <motion.div
+        </motion.p>        
+        <motion.p
           variants={variantsQ}
           initial={"hidden"}
           whileInView={"show"}
@@ -80,8 +80,8 @@ function About() {
           className="Question top-[46%] left-2
         ">
         Where do you reside?  
-        </motion.div>        
-        <motion.div
+        </motion.p>        
+        <motion.p
           variants={variantsQ}
           initial={"hidden"}
           whileInView={"show"}
@@ -89,7 +89,7 @@ function About() {
           className="Question bottom-[10%] left-10
         ">
           Which university are you attending ?      
-        </motion.div> 
+        </motion.p> 
       </div>   
     </section>
   )

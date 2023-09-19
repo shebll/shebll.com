@@ -42,7 +42,7 @@ export const experiencesData = [
     title: "Web Development Internship",
     location: "Cairo, CodeSoft",
     description:
-      "I take a Web Development Internship in CodeSoft learned basic of Web Development and make awesome project through this journey.",
+      "I undertook a Web Development Internship at CodeSoft, where I gained a solid understanding of the basics of web development and successfully completed several impressive projects during this enriching journey.",
     icon: "💻",
     date: "2023/8/30 - present",
   },
@@ -50,7 +50,7 @@ export const experiencesData = [
     title: "Full-Stack Developer Internship",
     location: "Cairo, GrowIntern",
     description:
-      "Get a awesome internship as full-stack developer with GrowIntern . My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB.",
+      "Secure an exciting full-stack developer internship with GrowIntern, where I can leverage my skills in React, Next.js, TypeScript, Tailwind CSS, Prisma, and MongoDB to contribute to impactful projects and further enhance my expertise in web development.",
     icon: "💻",
     date: "2023/8/30 - present",
   },
@@ -58,7 +58,7 @@ export const experiencesData = [
     title: "Front-End Developer Freelancer",
     location: "Upwork",
     description:
-      "I'm now a Front-End developer working as a freelancer on Upwork . My stack includes React, Next.js, TypeScript, Tailwind,  and ,framer-motion. I'm open to full-time opportunities.",
+      "Currently, I am working as a freelance Front-End developer on Upwork, specializing in React, Next.js, TypeScript, Tailwind CSS, and Framer Motion. I am actively seeking full-time opportunities to apply my skills and contribute to exciting projects.",
     icon: "💻",
     date: "2023/8/30 - present",
   },
@@ -68,7 +68,7 @@ export const projectsData = [
   {
     title: "Bento 0.2",
     description:
-      "I worked as a freelancer front-end developer on Upwork project for client project , the client want to copy Bento landing page which is has a lot of animation and user interaction , review from the client",
+      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/bento.png",
     demoUrl:"https://bentoclone.vercel.app/",
@@ -77,7 +77,7 @@ export const projectsData = [
   {
     title: "Medium 0.2",
     description:
-      "I worked as full-stack developer in this project to practice on next.js, making API, and Sanity.io as CMS  ",
+      "I served as a full-stack developer on this project, leveraging Next.js for front-end development, implementing API functionality, and utilizing Sanity.io as the content management system (CMS). ",
     tags: ["React", "Next.js","Tailwind", "Sanity","API"],
     imageUrl: "/projectImages/medium.png",
     demoUrl:"https://github.com/shebll/medium-blog-site",
@@ -86,7 +86,7 @@ export const projectsData = [
   {
     title: "Promptobia",
     description:
-    "I worked as full-stack developer in this project to practice on next.js, making API, and MongoDB ",
+    "I assumed the role of a full-stack developer in this project, honing my skills in Next.js for front-end development, constructing APIs, and utilizing MongoDB as the database technology.",
     tags: ["React", "Next.js","Tailwind", "MongoDB", "Mongoess" ,"Next-auth","google-auth" ],
     imageUrl: "/projectImages/promptobia.png",
     demoUrl:"https://promptopia-project-iota.vercel.app/",
@@ -96,7 +96,7 @@ export const projectsData = [
   {
     title: "Agency Page",
     description:
-      "I worked as front-end developer in this project to practice on HTML, CSS, and JS",
+      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
     tags: ["HTML", "CSS", "JS", "SASS"],
     imageUrl: "/projectImages/agency.png",
     demoUrl:"https://shebll.github.io/agency-landing-page/",
@@ -105,7 +105,7 @@ export const projectsData = [
   {
     title: "Travelia",
     description:
-      "I worked as front-end developer in this project to practice on HTML, CSS, and JS",
+      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
     tags: ["HTML", "CSS", "JS", "SASS"],
     imageUrl: "/projectImages/travelia.png",
     demoUrl:"https://shebll.github.io/Travelia/",
@@ -114,7 +114,7 @@ export const projectsData = [
   {
     title: "MetaVerse",
     description:
-      "I worked as front-end developer in this project to practice on Framer motion, Tailwind, and Next.js",
+      "I contributed as a front-end developer in this project, focusing on refining my expertise in Framer Motion, Tailwind CSS, and Next.js.",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/metaverse.png",
     demoUrl:"https://metaversus-landing-page-iota.vercel.app/",
@@ -125,7 +125,7 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    description: "Confident with these frontEnd skills",
+    description: "Proficient and confident in these front-end skills.",
     name: "FrontEnd",
     skills:[
       "HTML",
@@ -140,7 +140,7 @@ export const skillsData = [
     ],
   },  
   {
-    description: "Good knowledge in these backEnd skills",
+    description: "Basic knowledge in these backEnd skills",
     name: "BackEnd",
     skills:[    
       "MongoDB",
@@ -152,7 +152,7 @@ export const skillsData = [
     ],
   },
   {
-    description: "Fundamentals from my collage",
+    description: "Foundational knowledge acquired from my college education.",
     name: "Fundamentals",
     skills:[    
       "SOLID Principals",

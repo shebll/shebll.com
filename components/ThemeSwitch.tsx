@@ -72,7 +72,7 @@ function ThemeSwitch() {
       fixed bottom-8 right-10 text-lg  transition-all
       hover:scale-[1.1] active:scale-[0.9]
       dark:bg-[#0b0a1d] dark:border-gray-50 dark:shadow-[#e0da9dbb] md:text-2xl'
-      onClick={ThemeSwitchHandle}>
+      onClick={ThemeSwitchHandle} tabIndex={0}>
       {
         theme===""? ("☁️") : (theme === "light" ? ("🌤️"):("🌙") ) 
       }
