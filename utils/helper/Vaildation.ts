@@ -6,7 +6,9 @@ const validationMessage=(message:unknown , maxLength:number):boolean =>{
   } 
 }
 const validationSenderEmail=(senderEmail:unknown , maxLength:number):boolean =>{
-  if(!senderEmail ||  typeof senderEmail !== "string"|| senderEmail.length > maxLength ){
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!senderEmail ||  typeof senderEmail !== "string"||senderEmail.length > maxLength 
+    || !emailRegex.test(senderEmail) || senderEmail.trim() === ""){
     return false
   }else{
     return true
