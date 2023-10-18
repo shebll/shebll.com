@@ -75,6 +75,15 @@ export const projectsData = [
     repoUrl: "https://github.com/shebll/bento",
   },
   {
+    title: "Elzero",
+    description:
+      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
+    tags: ["HTML", "CSS", "JS"],
+    imageUrl: "/projectImages/elxero.png",
+    demoUrl: "https://elzero-web.vercel.app/",
+    repoUrl: "https://github.com/shebll/ElzeroWeb",
+  },
+  {
     title: "Medium 0.2",
     description:
       "I served as a full-stack developer on this project, leveraging Next.js for front-end development, implementing API functionality, and utilizing Sanity.io as the content management system (CMS). ",
@@ -84,31 +93,13 @@ export const projectsData = [
     repoUrl: "https://github.com/shebll/medium-blog-site",
   },
   {
-    title: "Promptobia",
+    title: "MetaVerse",
     description:
-      "I assumed the role of a full-stack developer in this project, honing my skills in Next.js for front-end development, constructing APIs, and utilizing MongoDB as the database technology.",
-    tags: [
-      "React",
-      "Next.js",
-      "Tailwind",
-      "MongoDB",
-      "Mongoess",
-      "Next-auth",
-      "google-auth",
-    ],
-    imageUrl: "/projectImages/promptobia.png",
-    demoUrl: "https://promptopia-project-iota.vercel.app/",
-    repoUrl: "https://github.com/shebll/PromptopiaProject",
-  },
-
-  {
-    title: "Agency Page",
-    description:
-      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
-    tags: ["HTML", "CSS", "JS", "SASS"],
-    imageUrl: "/projectImages/agency.png",
-    demoUrl: "https://shebll.github.io/agency-landing-page/",
-    repoUrl: "https://github.com/shebll/agency-landing-page",
+      "I contributed as a front-end developer in this project, focusing on refining my expertise in Framer Motion, Tailwind CSS, and Next.js.",
+    tags: ["React", "Next.js", "Framer motion", "Tailwind"],
+    imageUrl: "/projectImages/metaverse.png",
+    demoUrl: "https://metaversus-landing-page-iota.vercel.app/",
+    repoUrl: "https://github.com/shebll/METAVERSUS-LANDING-PAGE",
   },
   {
     title: "Travelia",
@@ -120,13 +111,13 @@ export const projectsData = [
     repoUrl: "https://github.com/shebll/Travelia",
   },
   {
-    title: "MetaVerse",
+    title: "Agency Page",
     description:
-      "I contributed as a front-end developer in this project, focusing on refining my expertise in Framer Motion, Tailwind CSS, and Next.js.",
-    tags: ["React", "Next.js", "Framer motion", "Tailwind"],
-    imageUrl: "/projectImages/metaverse.png",
-    demoUrl: "https://metaversus-landing-page-iota.vercel.app/",
-    repoUrl: "https://github.com/shebll/METAVERSUS-LANDING-PAGE",
+      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
+    tags: ["HTML", "CSS", "JS", "SASS"],
+    imageUrl: "/projectImages/agency.png",
+    demoUrl: "https://shebll.github.io/agency-landing-page/",
+    repoUrl: "https://github.com/shebll/agency-landing-page",
   },
 ] as const;
 
