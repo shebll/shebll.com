@@ -68,7 +68,7 @@ export const projectsData = [
   {
     title: "Bento 0.2",
     description:
-      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client",
+      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
     tags: ["React", "Next.js", "Framer motion", "Tailwind"],
     imageUrl: "/projectImages/bento.png",
     demoUrl: "https://bentoclone.vercel.app/",
@@ -109,6 +109,15 @@ export const projectsData = [
     imageUrl: "/projectImages/travelia.png",
     demoUrl: "https://shebll.github.io/Travelia/",
     repoUrl: "https://github.com/shebll/Travelia",
+  },
+  {
+    title: "answerflow",
+    description:
+      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to make personal landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
+    tags: ["React", "Next.js", "Framer motion", "Tailwind", "gsap"],
+    imageUrl: "/projectImages/answer.png",
+    demoUrl: "https://answer-flow.vercel.app/",
+    repoUrl: "https://github.com/shebll/AnswerFlow",
   },
   {
     title: "Agency Page",
