@@ -44,7 +44,7 @@ export const experiencesData = [
     description:
       "I undertook a Web Development Internship at CodeSoft, where I gained a solid understanding of the basics of web development and successfully completed several impressive projects during this enriching journey.",
     icon: "💻",
-    date: "2023/8/30 - present",
+    date: "2023/8/30 - 2023/9/30",
   },
   {
     title: "Full-Stack Developer Internship",
@@ -52,7 +52,7 @@ export const experiencesData = [
     description:
       "Secure an exciting full-stack developer internship with GrowIntern, where I can leverage my skills in React, Next.js, TypeScript, Tailwind CSS, Prisma, and MongoDB to contribute to impactful projects and further enhance my expertise in web development.",
     icon: "💻",
-    date: "2023/8/30 - present",
+    date: "2023/8/5 - 2023/9/6",
   },
   {
     title: "Front-End Developer Freelancer",
@@ -60,7 +60,7 @@ export const experiencesData = [
     description:
       "Currently, I am working as a freelance Front-End developer on Upwork, specializing in React, Next.js, TypeScript, Tailwind CSS, and Framer Motion. I am actively seeking full-time opportunities to apply my skills and contribute to exciting projects.",
     icon: "💻",
-    date: "2023/8/30 - present",
+    date: "2023/9/30 - present",
   },
 ] as const;
 
