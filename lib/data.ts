@@ -66,6 +66,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Jotion",
+    description:
+      "🚀 Excited to share my new project – a feature-rich note-taking app! 📝✨ Built with Next.js, React.js, Tailwind CSS, and more. 🔐 GitHub login, smart note restoration, real-time updates, and a mobile-responsive design. 💻📱 Effortlessly manage, create, and organize notes anytime, anywhere! Explore it here and let me know your thoughts! 🌟",
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Clerk",
+      "Convex",
+      "Zustand",
+      "Sonner",
+      "Blocknote",
+      "Edgestore",
+      "Emoji-mart",
+    ],
+    imageUrl: "/projectImages/jotion.png",
+    demoUrl: "https://note-taking-tan.vercel.app/",
+    repoUrl: "https://github.com/shebll/notion",
+  },
+  {
     title: "Bento 0.2",
     description:
       "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
