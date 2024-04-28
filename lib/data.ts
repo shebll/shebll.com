@@ -86,6 +86,32 @@ export const projectsData = [
     repoUrl: "https://github.com/shebll/notion",
   },
   {
+    title: "answerflow",
+    description:
+      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to make personal landing page which has a lot of animation and user interaction, My role involved collaborating with backend developers to implement the application, which included building a custom chatbot capable of engaging with users based on provided data. review from the client  ⭐⭐⭐⭐⭐",
+    tags: [
+      "React",
+      "Next.js",
+      "Next-auth",
+      "Framer motion",
+      "Tailwind",
+      "gsap",
+      "Zod",
+    ],
+    imageUrl: "/projectImages/answer.png",
+    demoUrl: "https://answerflowai.com/",
+    repoUrl: "https://github.com/shebll/AnswerFlow",
+  },
+  {
+    title: "SHADEL",
+    description:
+      "During my tenure at WadyEline (Shadel) company, I freelanced as a Fullstack developer. My responsibilities encompassed working on the CMS backend using sanity.io and frontend development with Next.js. The application I contributed to offers a seamless dashboard for administrators to effortlessly add and manage products and machines through sanity.io.      ",
+    tags: ["React", "Next.js", "Santiy.io", "Tailwind"],
+    imageUrl: "/projectImages/answer.png",
+    demoUrl: "https://shadel.vercel.app/",
+    repoUrl: "https://github.com/shebll/shadel",
+  },
+  {
     title: "Bento 0.2",
     description:
       "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
@@ -95,13 +121,13 @@ export const projectsData = [
     repoUrl: "https://github.com/shebll/bento",
   },
   {
-    title: "Elzero",
+    title: "THEBEST",
     description:
-      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
-    tags: ["HTML", "CSS", "JS"],
+      "In this project, I freelanced as a front-end developer, actively collaborating with backend developers to bring the application to life. This application served as a game player-manager, featuring dashboards tailored for both administrators and users.",
+    tags: ["React", "Node.js", "Next.js", "Next-auth", "Tailwind"],
     imageUrl: "/projectImages/elxero.png",
-    demoUrl: "https://elzero-web.vercel.app/",
-    repoUrl: "https://github.com/shebll/ElzeroWeb",
+    demoUrl: "https://thebest-football.vercel.app/",
+    repoUrl: "https://github.com/shebll/thebest",
   },
   {
     title: "Medium 0.2",
@@ -111,42 +137,6 @@ export const projectsData = [
     imageUrl: "/projectImages/medium.png",
     demoUrl: "https://medium-blog-site-ebtq.vercel.app/",
     repoUrl: "https://github.com/shebll/medium-blog-site",
-  },
-  {
-    title: "MetaVerse",
-    description:
-      "I contributed as a front-end developer in this project, focusing on refining my expertise in Framer Motion, Tailwind CSS, and Next.js.",
-    tags: ["React", "Next.js", "Framer motion", "Tailwind"],
-    imageUrl: "/projectImages/metaverse.png",
-    demoUrl: "https://metaversus-landing-page-iota.vercel.app/",
-    repoUrl: "https://github.com/shebll/METAVERSUS-LANDING-PAGE",
-  },
-  {
-    title: "Travelia",
-    description:
-      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
-    tags: ["HTML", "CSS", "JS", "SASS"],
-    imageUrl: "/projectImages/travelia.png",
-    demoUrl: "https://shebll.github.io/Travelia/",
-    repoUrl: "https://github.com/shebll/Travelia",
-  },
-  {
-    title: "answerflow",
-    description:
-      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to make personal landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
-    tags: ["React", "Next.js", "Framer motion", "Tailwind", "gsap"],
-    imageUrl: "/projectImages/answer.png",
-    demoUrl: "https://answer-flow.vercel.app/",
-    repoUrl: "https://github.com/shebll/AnswerFlow",
-  },
-  {
-    title: "Agency Page",
-    description:
-      "I actively participated as a front-end developer in this project, utilizing HTML, CSS, and JavaScript to enhance my skills and proficiency in web development.",
-    tags: ["HTML", "CSS", "JS", "SASS"],
-    imageUrl: "/projectImages/agency.png",
-    demoUrl: "https://shebll.github.io/agency-landing-page/",
-    repoUrl: "https://github.com/shebll/agency-landing-page",
   },
 ] as const;
 
@@ -162,6 +152,7 @@ export const skillsData = [
       "TypeScript",
       "React",
       "Next.js",
+      "Next-Auth",
       "Tailwind",
       "Framer Motion",
     ],
@@ -169,19 +160,28 @@ export const skillsData = [
   {
     description: "Basic knowledge in these backEnd skills",
     name: "BackEnd",
-    skills: ["MongoDB", "mongoose", "Prisma", "SQL", "Sanity", "API"],
+    skills: [
+      "Node.js",
+      "MongoDB",
+      "mongoose",
+      "Prisma",
+      "SQL",
+      "Sanity",
+      "REST API",
+    ],
   },
   {
     description: "Foundational knowledge acquired from my college education.",
     name: "Fundamentals",
     skills: [
       "SOLID Principals",
-      "Software Principals",
       "Agile",
-      "Design Pattern ",
-      "DataBase",
-      "Data Structure",
       "OOP",
+      "System Analysis & Design",
+      "DataBase",
+      "Software Principals",
+      "Design Pattern ",
+      "Data Structure",
       "problem Solving",
       "Data Warehouse",
     ],
