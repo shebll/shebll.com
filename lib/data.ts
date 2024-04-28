@@ -107,7 +107,7 @@ export const projectsData = [
     description:
       "During my tenure at WadyEline (Shadel) company, I freelanced as a Fullstack developer. My responsibilities encompassed working on the CMS backend using sanity.io and frontend development with Next.js. The application I contributed to offers a seamless dashboard for administrators to effortlessly add and manage products and machines through sanity.io.      ",
     tags: ["React", "Next.js", "Santiy.io", "Tailwind"],
-    imageUrl: "/projectImages/answer.png",
+    imageUrl: "/projectImages/shadel.png",
     demoUrl: "https://shadel.vercel.app/",
     repoUrl: "https://github.com/shebll/shadel",
   },
@@ -125,7 +125,7 @@ export const projectsData = [
     description:
       "In this project, I freelanced as a front-end developer, actively collaborating with backend developers to bring the application to life. This application served as a game player-manager, featuring dashboards tailored for both administrators and users.",
     tags: ["React", "Node.js", "Next.js", "Next-auth", "Tailwind"],
-    imageUrl: "/projectImages/elxero.png",
+    imageUrl: "/projectImages/thebest.png",
     demoUrl: "https://thebest-football.vercel.app/",
     repoUrl: "https://github.com/shebll/thebest",
   },
