@@ -8,11 +8,11 @@ function Project({ project }: props) {
     <section
       role="region"
       aria-label="project"
-      className="group projectCard flex flex-row-reverse even:flex-row gap-8 md:w-[800px] overflow-hidden
+      className="group projectCard flex flex-row-reverse even:flex-row gap-8 md:w-[800px] lg:w-[1000px] overflow-hidden
       bg-gray-200 hover:bg-gray-300 rounded-2xl shadow-2xl transition-all
       dark:bg-[#17181c] dark:hover:bg-[#26282e] "
     >
-      <div className="px-10 py-14 flex justify-start flex-col flex-1 gap-6  ">
+      <div className="flex flex-col justify-start flex-1 gap-6 px-10 py-14 ">
         <h1 className="text-3xl font-bold uppercase" tabIndex={0}>
           {project.title}
         </h1>
@@ -30,7 +30,7 @@ function Project({ project }: props) {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col  md:flex-row gap-4 mt-5">
+        <div className="flex flex-col gap-4 mt-5 md:flex-row">
           <a
             href={project.demoUrl}
             target="_blank"
@@ -55,7 +55,7 @@ function Project({ project }: props) {
           </a>
         </div>
       </div>
-      <div className="relative flex-1 p-4 hidden md:block">
+      <div className="relative flex-1 hidden p-4 md:block">
         <Image
           src={project.imageUrl}
           alt="project image"
