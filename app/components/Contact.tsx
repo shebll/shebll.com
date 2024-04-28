@@ -17,17 +17,17 @@ function Contact() {
       id="contact"
       className="flex justify-center items-center flex-col gap-12 scroll-m-28 max-w-[48rem]"
     >
-      <div className="flex justify-center items-center flex-col gap-4">
+      <div className="flex flex-col items-center justify-center gap-4">
         <h1 id="contact-me-section" className="headerText">
           Contact Me.
         </h1>
         <p className="subText">
           Please Contact Me Directly At &nbsp;
           <a
-            href="mailto:shebblloll@gmail.com"
+            href="mailto:sheb4900@gmail.com"
             className="underline text-[#0b0a1d] dark:text-gray-50"
           >
-            shebblloll@gmail.com
+            sheb4900@gmail.com
           </a>
           &nbsp;Or Through This Form .
         </p>
@@ -43,7 +43,7 @@ function Contact() {
           toast.success("successful send wait for my response");
           return;
         }}
-        className="flex justify-center items-center w-full flex-col gap-4"
+        className="flex flex-col items-center justify-center w-full gap-4"
       >
         <input
           type="email"
