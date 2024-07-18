@@ -17,6 +17,17 @@ export const metadata = {
   icons: { icon: "/personalImages/shebllImage.png" },
 };
 
+const setInitialTheme = `
+  (function() {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  })();
+`;
+
 export default function RootLayout({
   children,
 }: {
@@ -24,11 +35,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-900 relative dark:bg-gray-900 dark:text-gray-50`}
       >
         <div
-          className="bg-[#ffccce] absolute -z-10
+          className="spotlight opacity-0 bg-[#ffccce] absolute -z-10
           right-[5rem] top[-6rem]
           md:right-[10rem] h-[32rem] w-[32rem] sm:w-[68rem]
           rounded-full blur-[9rem]
@@ -36,7 +50,7 @@ export default function RootLayout({
           "
         ></div>
         <div
-          className="bg-[#dbd7fb] absolute top[0rem] -z-10
+          className="spotlight opacity-0 bg-[#dbd7fb] absolute top[0rem] -z-10
           left-[-15rem] md:left-[-16rem] lg:left-[-10rem] xl:left-[-5rem] 2xl:left-[5rem]
           h-[32rem] w-[32rem] sm:w-[68rem]
           rounded-full blur-[9rem] 
