@@ -2,7 +2,6 @@ import About from "@/app/components/About";
 import Contact from "@/app/components/Contact";
 import Divider from "@/app/components/Divider";
 import Experience from "@/app/components/Experience";
-import Footer from "@/app/components/Footer";
 import Inter from "@/app/components/Inter";
 import Projects from "@/app/components/Projects";
 import Resume from "@/app/components/Resume";
