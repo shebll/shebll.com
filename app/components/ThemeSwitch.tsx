@@ -77,13 +77,13 @@ function ThemeSwitch() {
   }, []);
 
   return (
-    <div className="z-[60] fixed top-8 right-10 transition-all">
+    <div className="z-[60] fixed bottom-8 right-10 transition-all">
       <div
         className={`absolute ${
           open
-            ? "top-[110%] right-[0%] visible opacity-100"
-            : "top-[180%] right-[0%]  invisible opacity-0"
-        } top-[110%] right-[0%] transition-all border-[1.4px] border-black/40 
+            ? "bottom-[110%] right-[0%] visible opacity-100"
+            : "bottom-[150%] right-[0%]  invisible opacity-0"
+        }  right-[0%] transition-all border-[1.4px] border-black/40 
       p-2 rounded-xl dark:border-gray-200 flex flex-col gap-1 text-start `}
       >
         <p
