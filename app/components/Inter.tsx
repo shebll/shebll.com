@@ -70,11 +70,17 @@ function Inter() {
                 variants={TextVariants}
                 initial={"initial"}
                 animate={"animate"}
-                className="max-w-xl mx-auto mt-4 text-base font-normal text-center text-gray-600 dark:text-neutral-300"
+                className="max-w-2xl mx-auto mt-4 text-lg font-normal text-center text-gray-600 dark:text-neutral-300"
               >
-                I specialize in Front-End Development with expertise in React
-                and Next.js, creating responsive, interactive, seamless,
-                scalable, and high-performance websites and mobile applications
+                I specialize in{" "}
+                <span className="font-bold marked ">
+                  {" "}
+                  Front-End Development
+                </span>{" "}
+                with expertise in{" "}
+                <span className="font-bold marked ">React and Next.js</span>,
+                creating responsive, interactive, seamless, scalable, and
+                high-performance websites and mobile applications
               </m.p>
             </div>
             <m.div

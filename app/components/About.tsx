@@ -66,19 +66,19 @@ function About() {
       </div>
       <div className="w-full md:w-[650px] flex flex-col gap-4">
         <h2 className="paragraph dark:!text-gray-50" tabIndex={0}>
-          {`My name is Ahmed Mohamed, and I'm a ${calculateAge(
-            new Date(2001, 11, 26)
-          )}-year-old graduate in
-          Computer Science from Cairo University, specializing in Information
-          Systems. I reside in Cairo, Egypt.`}
+          My name is Ahmed Mohamed, and I&apos;m a{" "}
+          {calculateAge(new Date(2001, 11, 26))}-year-old graduate in Computer
+          Science from Cairo University , specializing in Information Systems. I
+          reside in Cairo, Egypt.
         </h2>
         <h3 className="paragraph dark:!text-gray-50" tabIndex={0}>
-          specializing in Front-End Development with a solid foundation in
-          backend technologies. With 1 year of experience, I creating
-          responsive, interactive , seamless , scalable, and high-performance
-          websites and mobile applications. My expertise includes React and
-          Next.js, and I am passionate about delivering modern, user-friendly
-          web solutions.
+          specializing in{" "}
+          <span className="font-bold marked">Front-End Development</span> with a
+          solid foundation in backend technologies. With 1 year of experience, I
+          creating responsive, interactive , seamless , scalable, and
+          high-performance websites and mobile applications. My expertise
+          includes React and Next.js, and I am passionate about delivering
+          modern, user-friendly web solutions.
         </h3>
       </div>
       <div className="hidden lg:block ">
