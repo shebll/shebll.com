@@ -5,13 +5,19 @@ import { useActiveSection } from "@/context/active-section-context";
 import Link from "next/link";
 
 import { links } from "@/lib/data";
+import useScrollingUp from "@/utils/hooks/ScrollingUp";
 
 function Header() {
   const { activeSection, setActiveSection } = useActiveSection();
+  const { scrollingUp, setScrollingUp } = useScrollingUp();
   return (
     <header>
       <LazyMotion features={domAnimation}>
-        <div className="fixed w-full z-50 flex justify-center sm:top-[30px]">
+        <div
+          className={`fixed w-full z-50 flex justify-center transition-all ${
+            scrollingUp ? "sm:top-[30px]" : "sm:top-[-100px] "
+          }`}
+        >
           <m.section
             className="px-1 md:px-7 py-3 flex justify-center items-center rounded-none  sm:rounded-full border-white
           bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] overflow-hidden
@@ -48,7 +54,7 @@ function Header() {
                     {link.name === activeSection && (
                       <m.span
                         layoutId="underline"
-                        className=" inset-0  absolute bg-[#0b0a1d] rounded-full -z-10 dark:bg-[#e0e0e0]"
+                        className="inset-0  absolute bg-[#0b0a1d] rounded-full -z-10 dark:bg-[#e0e0e0]"
                       />
                     )}
                     {link.name}
@@ -58,6 +64,12 @@ function Header() {
             </nav>
           </m.section>
         </div>
+        {!scrollingUp && (
+          <div
+            onClick={() => setScrollingUp(true)}
+            className={`fixed w-[300px] z-50 left-[50%] translate-x-[-50%] rounded-sm cursor-pointer h-2 dark:bg-gray-300 bg-gray-800 top-[-10px] sm:top-[0px] transition-all `}
+          />
+        )}
       </LazyMotion>
     </header>
   );
