@@ -1,6 +1,6 @@
 "use client";
 import useActiveSectionInView from "@/utils/hooks/useActiveSectionInView";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
 
@@ -9,11 +9,20 @@ function Resume() {
     sectionName: "Resume",
     amount: 0.1,
   });
+
   const refText = useRef(null);
   const { scrollYProgress: s1 } = useScroll({
     target: refText,
     offset: ["center end", "end 600px"],
   });
+  const { scrollYProgress: s12 } = useScroll({
+    target: refText,
+  });
+
+  const rotate = useTransform(s12, [0, 1], [0, 20]);
+  const scale2 = useTransform(s1, [0, 1], [0.7, 1]);
+  const translate = useTransform(s1, [0, 1], ["-300px", "20px"]);
+
   const refImg2 = useRef(null);
   const { scrollYProgress: s2 } = useScroll({
     target: refImg2,
@@ -37,7 +46,14 @@ function Resume() {
 
   const transformZ4 = useTransform(s4, [0, 1], [0, 1]);
   return (
-    <section id="resume" className="relative resumeSection" ref={refSection}>
+    <section
+      id="resume"
+      className="relative resumeSection"
+      ref={refSection}
+      style={{
+        perspective: "1000px",
+      }}
+    >
       <motion.div
         className="relative z-10 hidden cv md:block"
         ref={refImg2}
@@ -80,15 +96,6 @@ function Resume() {
           />
         </motion.div>
       </motion.div>
-      <div className="block md:hidden">
-        <Image
-          src={"/personalImages/Ahmed_ResumeH1.png"}
-          alt="1Resume image"
-          width={900}
-          height={700}
-          quality={92}
-        />
-      </div>
       <div
         ref={refText}
         className="downloadCv text-gray-500 text-4xl md:text-7xl font-bold flex flex-col justify-center items-center gap-4 uppercase  mt-[70px] md:mt-[200px] z-20 relative text-center "
@@ -100,6 +107,23 @@ function Resume() {
           DOWNLOAD MY CV
         </a>
       </div>
+      <motion.div
+        style={{
+          rotateX: rotate,
+          scale: scale2,
+          translateY: translate,
+        }}
+        className="block md:hidden mx-auto border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl relative z-20"
+      >
+        <Image
+          src={"/personalImages/Ahmed_ResumeH1.jpg"}
+          alt="1Resume image"
+          width={900}
+          height={700}
+          quality={92}
+          className="rounded-[20px]"
+        />
+      </motion.div>
     </section>
   );
 }
