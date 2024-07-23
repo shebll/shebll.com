@@ -129,7 +129,3 @@ function Resume() {
 }
 
 export default Resume;
-
-// eslint: {
-//   ignoreDuringBuilds: true,
-// },

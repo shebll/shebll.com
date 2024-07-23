@@ -43,20 +43,13 @@ function Header() {
                     href={link.hash}
                     onClick={() => setActiveSection(link.name)}
                     className={`relative z-10 px-4 py-2 flex justify-center items-center 
-                  text-gray-600 hover:text-[#0b0a1d] transition font-medium
-                    dark:text-gray-200 dark:hover:text-gray-50
+                  text-gray-600 hover:text-[#0b0a1d] transition-all font-medium
+                    dark:text-gray-200 dark:hover:text-gray-50 rounded-full 
                     ${
-                      link.name === activeSection
-                        ? "!text-gray-50 hover:!text-gray-50 dark:!text-[#0b0a1d] dark:!hover:text-[#0b0a1d]"
-                        : ""
+                      link.name === activeSection &&
+                      "!text-gray-50 hover:!text-gray-50 dark:!text-[#0b0a1d] dark:!hover:text-[#0b0a1d] bg-[#0b0a1d] dark:bg-[#e0e0e0]"
                     }`}
                   >
-                    {link.name === activeSection && (
-                      <m.span
-                        layoutId="underline"
-                        className="inset-0  absolute bg-[#0b0a1d] rounded-full -z-10 dark:bg-[#e0e0e0]"
-                      />
-                    )}
                     {link.name}
                   </Link>
                 </m.div>
