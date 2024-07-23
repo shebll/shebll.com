@@ -21,7 +21,7 @@ function Header() {
           <m.section
             className="px-1 md:px-7 py-3 flex justify-center items-center rounded-none  sm:rounded-full border-white
           bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] overflow-hidden
-          dark:border-gray-900 dark:bg-[#0b0a1d] dark:bg-opacity-80 "
+          dark:border-gray-900 dark:bg-[#0a0a13ba] dark:bg-opacity-80 "
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 50 }}

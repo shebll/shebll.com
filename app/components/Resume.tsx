@@ -45,21 +45,21 @@ function Resume() {
       >
         <div className="relative z-20 front">
           <Image
-            src={"/personalImages/1.jpeg"}
+            src={"/personalImages/11.jpg"}
             alt="1Resume image"
             width={900}
             height={700}
             quality={92}
           />
         </div>
-        <div className="subCv dark:bg-[#111827] bg-[#f9fafb] z-10 relative">
+        <div className="subCv dark:bg-[#090c13] bg-[#f9fafb] z-10 relative">
           <motion.div
             className="origin-top middle "
             style={{ rotateX: transformZ2 }}
             ref={refImg3}
           >
             <Image
-              src={"/personalImages/2.jpeg"}
+              src={"/personalImages/22.jpg"}
               alt="1Resume image"
               width={900}
               height={700}
@@ -72,7 +72,7 @@ function Resume() {
           style={{ rotateX: transformZ3 }}
         >
           <Image
-            src={"/personalImages/3.jpeg"}
+            src={"/personalImages/33.jpg"}
             alt="1Resume image"
             width={900}
             height={700}
@@ -82,7 +82,7 @@ function Resume() {
       </motion.div>
       <div className="block md:hidden">
         <Image
-          src={"/personalImages/Ahmed_ResumeH.jpg"}
+          src={"/personalImages/Ahmed_ResumeH1.png"}
           alt="1Resume image"
           width={900}
           height={700}

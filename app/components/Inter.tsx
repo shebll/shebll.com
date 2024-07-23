@@ -54,29 +54,29 @@ function Inter() {
             className="flex flex-col items-center justify-center gap-8"
             tabIndex={0}
           >
-            <m.h1
-              variants={TextVariants}
-              initial={"initial"}
-              animate={"animate"}
-              className="text-[24px] md:text-4xl leading-[33px] md:leading-[46px] text-center tracking-tight"
-            >
-              Hey, I&apos;m <span className="font-bold">Ahmed Shebl</span>.
-              I&apos;m a junior{" "}
-              <span className="font-bold">Software Engineer Front-End</span>{" "}
-              <br />
-              with <span className="font-bold">1</span> year of experience. I
-              enjoy building
-              <br />
-              sites & apps. My focus is React{" "}
-              <Link
-                href={"https://nextjs.org/"}
-                target="blank"
-                className="font-bold underline"
+            <div className="">
+              <m.h1
+                variants={TextVariants}
+                initial={"initial"}
+                animate={"animate"}
+                className="py-4 text-4xl font-bold text-center text-transparent bg-opacity-50 md:text-7xl bg-clip-text bg-gradient-to-b from-[#141414] to-neutral-400/5 dark:from-neutral-50 dark:to-neutral-400/5"
               >
-                ( Next.js )
-              </Link>
-              .
-            </m.h1>
+                Hey, I&apos;m <span className="font-bold ">Ahmed Shebl</span>
+                <div className="br"></div>
+                I&apos;m a junior{" "}
+                <span className="font-bold ">Software Engineer </span>{" "}
+              </m.h1>
+              <m.p
+                variants={TextVariants}
+                initial={"initial"}
+                animate={"animate"}
+                className="max-w-xl mx-auto mt-4 text-base font-normal text-center text-gray-600 dark:text-neutral-300"
+              >
+                I specialize in Front-End Development with expertise in React
+                and Next.js, creating responsive, interactive, seamless,
+                scalable, and high-performance websites and mobile applications
+              </m.p>
+            </div>
             <m.div
               variants={btnVariants}
               initial={"initial"}

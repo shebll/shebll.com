@@ -9,7 +9,7 @@ import Skills from "@/app/components/Skills";
 
 export default function Home() {
   return (
-    <main className="flex gap-[180px] flex-col px-6 justify-center items-center">
+    <main className="flex gap-[180px] flex-col px-3 justify-center items-center">
       <Inter />
       <Divider />
       <About />

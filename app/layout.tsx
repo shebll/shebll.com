@@ -39,7 +39,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
       </head>
       <body
-        className={`${inter.className} bg-gray-50 text-gray-900 relative dark:bg-gray-900 dark:text-gray-50`}
+        className={`${inter.className} bg-gray-50 text-gray-900 relative dark:bg-[#090c13] dark:text-gray-50 overflow-x-hidden`}
       >
         <div
           className="spotlight opacity-0 bg-[#ffccce] absolute -z-10
