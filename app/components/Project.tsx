@@ -3,33 +3,58 @@ import Image from "next/image";
 type props = {
   project: (typeof projectsData)[number];
 };
+
+interface CSSProperties extends React.CSSProperties {
+  "--tag-count"?: number;
+}
+
 function Project({ project }: props) {
+  const style: CSSProperties = {
+    "--tag-count": project.tags.length,
+  };
+
   return (
     <section
       role="region"
       aria-label="project"
-      className="group projectCard flex flex-row-reverse even:flex-row gap-8 md:w-[800px] lg:w-[1000px] overflow-hidden
-      bg-gray-200 hover:bg-gray-300 rounded-2xl shadow-2xl transition-all
-      dark:bg-[#17181c] dark:hover:bg-[#26282e] "
+      className="group projectCard flex flex-row-reverse even:flex-row gap-8 md:w-[800px] lg:w-[1200px] overflow-hidden
+      bg-gray-200 rounded-2xl shadow-2xl transition-all
+      dark:bg-[#17181c]"
     >
       <div className="flex flex-col justify-start flex-1 gap-6 px-10 py-14 ">
+        <p className="bg-transparent border-white rounded-full border-[1px] py-1 px-6 font-semibold w-fit">
+          {project.category}
+        </p>
         <h1 className="text-3xl font-bold uppercase" tabIndex={0}>
           {project.title}
         </h1>
         <p className="text-lg font-medium dark:text-gray-300" tabIndex={0}>
           {project.description}
         </p>
-        <ul className="flex flex-row flex-wrap gap-3">
-          {project.tags.map((skill, index) => (
-            <li
-              key={index}
-              tabIndex={0}
-              className="px-3 py-2 bg-black/[0.05] dark:bg-black/[0.7] rounded-md shadow-md "
-            >
-              {skill}
-            </li>
-          ))}
-        </ul>
+        <div className="slider" style={style}>
+          <ul className="slider-track">
+            {project.tags.map((skill, index) => (
+              <li
+                key={index}
+                tabIndex={0}
+                className="slide"
+                // className="px-3 py-2 bg-black/[0.05] dark:bg-black/[0.7] rounded-md shadow-md slide"
+              >
+                {skill}
+              </li>
+            ))}
+            {project.tags.map((skill, index) => (
+              <li
+                key={index + 20}
+                tabIndex={0}
+                className="slide"
+                // className="px-3 py-2 bg-black/[0.05] dark:bg-black/[0.7] rounded-md shadow-md slide"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className="flex flex-col gap-4 mt-5 md:flex-row">
           <a
             href={project.demoUrl}
