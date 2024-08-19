@@ -1,0 +1,4 @@
+name = "shebl personal site"
+compatibility_date = "2024-08-4"
+
+node_compat = true
