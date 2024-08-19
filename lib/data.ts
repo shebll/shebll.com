@@ -36,7 +36,7 @@ export const experiencesData = [
     description:
       "Throughout my academic journey, I have acquired a comprehensive understanding of various programming fundamentals, including essential concepts, object-oriented programming (OOP), SOLID principles, design patterns, algorithms, data structures, databases, and data warehousing. These foundational skills have equipped me with a solid understanding of the core principles and best practices in the field of computer science.",
     icon: "🎓",
-    date: "2020 - present",
+    date: "2020 - 2024",
   },
   {
     title: "Web Development Internship",
@@ -58,14 +58,23 @@ export const experiencesData = [
     title: "Front-End Developer Freelancer",
     location: "Upwork",
     description:
-      "Currently, I am working as a freelance Front-End developer on Upwork, specializing in React, Next.js, TypeScript, Tailwind CSS, and Framer Motion. I am actively seeking full-time opportunities to apply my skills and contribute to exciting projects.",
+      "Currently, I am working as a freelance Front-End developer on Upwork, specializing in React, Next.js, TypeScript, Tailwind CSS, and Framer-Motion. I am actively seeking full-time opportunities to apply my skills and contribute to exciting projects.",
     icon: "💻",
     date: "2023/9/30 - present",
+  },
+  {
+    title: "Web Developer Internship at NeuronetiX",
+    location: "Cairo, NeuronetiX",
+    description:
+      "During my time as a React & Node.js intern at ABDELGHAFOR'S VIRTUAL INTERNSHIPS, I gained hands-on experience in full-stack web development and worked on real-world projects that enhanced my technical skills and professional growth",
+    icon: "💻",
+    date: "2024/8/15 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
+    category: "Full-Stack",
     title: "Jotion",
     description:
       "🚀 Excited to share my new project – a feature-rich note-taking app! 📝✨ Built with Next.js, React.js, Tailwind CSS, and more. 🔐 GitHub login, smart note restoration, real-time updates, and a mobile-responsive design. 💻📱 Effortlessly manage, create, and organize notes anytime, anywhere! Explore it here and let me know your thoughts! 🌟",
@@ -87,13 +96,14 @@ export const projectsData = [
   },
   {
     title: "answerflow",
+    category: "Full-Stack",
     description:
       "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to make personal landing page which has a lot of animation and user interaction, My role involved collaborating with backend developers to implement the application, which included building a custom chatbot capable of engaging with users based on provided data. review from the client  ⭐⭐⭐⭐⭐",
     tags: [
       "React",
       "Next.js",
       "Next-auth",
-      "Framer motion",
+      "Framer-motion",
       "Tailwind",
       "gsap",
       "Zod",
@@ -104,6 +114,7 @@ export const projectsData = [
   },
   {
     title: "SHADEL",
+    category: "Full-Stack",
     description:
       "During my tenure at WadyEline (Shadel) company, I freelanced as a Fullstack developer. My responsibilities encompassed working on the CMS backend using sanity.io and frontend development with Next.js. The application I contributed to offers a seamless dashboard for administrators to effortlessly add and manage products and machines through sanity.io.      ",
     tags: ["React", "Next.js", "Santiy.io", "Tailwind"],
@@ -113,15 +124,17 @@ export const projectsData = [
   },
   {
     title: "Bento 0.2",
+    category: "Front-End",
     description:
       "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
-    tags: ["React", "Next.js", "Framer motion", "Tailwind"],
+    tags: ["React", "Next.js", "Framer-motion", "Tailwind"],
     imageUrl: "/projectImages/bento.png",
     demoUrl: "https://bentoclone.vercel.app/",
     repoUrl: "https://github.com/shebll/bento",
   },
   {
     title: "THEBEST",
+    category: "Front-End",
     description:
       "In this project, I freelanced as a front-end developer, actively collaborating with backend developers to bring the application to life. This application served as a game player-manager, featuring dashboards tailored for both administrators and users.",
     tags: ["React", "Node.js", "Next.js", "Next-auth", "Tailwind"],
@@ -131,6 +144,7 @@ export const projectsData = [
   },
   {
     title: "Medium 0.2",
+    category: "Full-Stack",
     description:
       "I served as a full-stack developer on this project, leveraging Next.js for front-end development, implementing API functionality, and utilizing Sanity.io as the content management system (CMS). ",
     tags: ["React", "Next.js", "Tailwind", "Sanity", "API"],
@@ -154,7 +168,10 @@ export const skillsData = [
       "Next.js",
       "Next-Auth",
       "Tailwind",
-      "Framer Motion",
+      "Framer-Motion",
+      "GSAP",
+      "Jest",
+      "React Testing Library",
     ],
   },
   {
@@ -162,6 +179,7 @@ export const skillsData = [
     name: "BackEnd",
     skills: [
       "Node.js",
+      "hono & express",
       "MongoDB",
       "mongoose",
       "Prisma",
