@@ -41,6 +41,9 @@ export default function RootLayout({
       <body
         className={`${inter.className}  bg-gray-50 text-gray-900 relative dark:bg-[#090c13] dark:text-gray-50 overflow-x-hidden`}
       >
+        <div style={containerStyle}>
+          <div style={backgroundStyle}></div>
+        </div>
         <div
           className="spotlight opacity-0 bg-[#ffccce] absolute -z-10
           right-[5rem] top[-6rem]
@@ -68,3 +71,23 @@ export default function RootLayout({
     </html>
   );
 }
+const containerStyle = {
+  flex: "none",
+  height: "100vh",
+  left: "50%",
+  transform: "translateX(-50%)",
+  position: "fixed",
+  top: 0,
+  width: "100%",
+};
+
+const backgroundStyle = {
+  width: "100%",
+  height: "100%",
+  backgroundSize: "128px",
+  backgroundRepeat: "repeat",
+  backgroundImage:
+    "url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')",
+  opacity: 0.075,
+  borderRadius: 0,
+};
