@@ -6,10 +6,11 @@ import Inter from "@/app/components/Inter";
 import Projects from "@/app/components/Projects";
 import Resume from "@/app/components/Resume";
 import Skills from "@/app/components/Skills";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="flex gap-[180px] flex-col px-3 justify-center items-center">
+    <main className="flex gap-[180px] flex-col px-3 justify-center items-center grainy-bg">
       <Inter />
       <Divider />
       <About />
@@ -21,6 +22,8 @@ export default function Home() {
       <Experience />
       <Divider />
       <Resume />
+      <Divider />
+      <Testimonials />
       <Divider />
       <Contact />
     </main>
