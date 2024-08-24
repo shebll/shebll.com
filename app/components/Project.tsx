@@ -47,7 +47,7 @@ function Project({ project, index, range, target, progress }: props) {
       aria-label="project"
       ref={cardRef}
       className="group projectCard flex flex-row-reverse even:flex-row gap-2 md:w-[800px] lg:w-[1200px] overflow-hidden
-      bg-gray-200 rounded-2xl shadow-2xl transition-all dark:bg-[#17181c] items-center sticky border-[1px] border-[#26272e]"
+      bg-gray-200 rounded-2xl shadow-2xl transition-all dark:bg-[#17181c] items-center sticky border-[2px] border-[#c2c2c2a2] dark:border-[#26272ea1]"
     >
       <div className="flex flex-col justify-start flex-1 gap-6 px-10 py-14 ">
         <p className="bg-transparent border-white rounded-full border-[1px] py-1 px-6 font-semibold w-fit">

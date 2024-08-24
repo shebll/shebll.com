@@ -6,6 +6,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import ThemSwitch from "@/app/components/ThemeSwitch";
 import { Toaster } from "react-hot-toast";
+import { CSSProperties } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,7 +72,7 @@ export default function RootLayout({
     </html>
   );
 }
-const containerStyle = {
+const containerStyle: CSSProperties = {
   flex: "none",
   height: "100vh",
   left: "50%",
@@ -88,6 +89,5 @@ const backgroundStyle = {
   backgroundRepeat: "repeat",
   backgroundImage:
     "url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')",
-  opacity: 0.075,
-  borderRadius: 0,
+  opacity: 0.045,
 };

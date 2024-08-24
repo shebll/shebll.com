@@ -73,11 +73,8 @@ function Inter() {
                 className="max-w-2xl mx-auto mt-4 text-lg font-normal text-center text-gray-600 dark:text-neutral-300"
               >
                 I specialize in{" "}
-                <span className="font-bold marked ">
-                  {" "}
-                  Front-End Development
-                </span>{" "}
-                with expertise in{" "}
+                <span className=" marked "> Front-End Development</span> with
+                expertise in{" "}
                 <span className="font-bold marked ">React and Next.js</span>,
                 creating responsive, interactive, seamless, scalable, and
                 high-performance websites and mobile applications
