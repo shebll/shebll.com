@@ -123,6 +123,26 @@ export const projectsData = [
     repoUrl: "https://github.com/shebll/shadel",
   },
   {
+    title: "Nexus-Admin",
+    category: "Front-End",
+    description:
+      "The Nexus Admin Dashboard is a comprehensive management tool designed for administrators of the Nexus mental health platform, which serves both users and doctors. This dashboard allows admins to efficiently monitor and manage various aspects of the platform,",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Shadcn",
+      "Chart.js",
+      "React Hook Form ",
+      "Zod",
+      "Zustand",
+      "TanStack Query",
+    ],
+    imageUrl: "/projectImages/nexus-admin.png",
+    demoUrl: "https://nexus-admin-panel.vercel.app/",
+    repoUrl: "https://github.com/shebll/mental-health-admin-dashboard",
+  },
+  {
     title: "Bento 0.2",
     category: "Front-End",
     description:
@@ -205,4 +225,3 @@ export const skillsData = [
     ],
   },
 ] as const;
-// "Prisma",
