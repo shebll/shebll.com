@@ -6,7 +6,7 @@ import Inter from "@/app/components/Inter";
 import Projects from "@/app/components/Projects";
 import Resume from "@/app/components/Resume";
 import Skills from "@/app/components/Skills";
-// import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
       <Divider />
       <Resume />
       <Divider />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Divider />
       <Contact />
     </main>

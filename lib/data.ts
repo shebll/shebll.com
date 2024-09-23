@@ -62,14 +62,6 @@ export const experiencesData = [
     icon: "💻",
     date: "2023/9/30 - present",
   },
-  {
-    title: "Web Developer Internship at NeuronetiX",
-    location: "Cairo, NeuronetiX",
-    description:
-      "During my time as a React & Node.js intern at ABDELGHAFOR'S VIRTUAL INTERNSHIPS, I gained hands-on experience in full-stack web development and worked on real-world projects that enhanced my technical skills and professional growth",
-    icon: "💻",
-    date: "2024/8/15 - present",
-  },
 ] as const;
 
 export const projectsData = [
@@ -93,6 +85,20 @@ export const projectsData = [
     imageUrl: "/projectImages/jotion.png",
     demoUrl: "https://note-taking-tan.vercel.app/",
     repoUrl: "https://github.com/shebll/notion",
+    LinkedInPost:
+      "https://www.linkedin.com/posts/ahmed-shebl-07a331268_nextjs-reactjs-tailwindcss-activity-7147915666933690368-Q5SJ?utm_source=share&utm_medium=member_desktop",
+  },
+  {
+    title: "JobFlow ",
+    category: "Full-Stack",
+    description:
+      "Developed a job listing web app using Next.js 14, featuring dynamic SEO, static generation for fast performance, server actions for enhanced user experience, and secure admin controls with Clerk.",
+    tags: ["Next.js", "React", "TypeScript", "Shadcn UI", "Prisma", "Vercel"],
+    imageUrl: "/projectImages/jobflow.png",
+    demoUrl: "https://jobflow-clone.vercel.app/",
+    repoUrl: "https://github.com/shebll/jobflow",
+    LinkedInPost:
+      "https://www.linkedin.com/posts/ahmed-shebl-07a331268_jobflow-discover-jobs-activity-7244053153489338369-tMyU?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "answerflow",
@@ -111,6 +117,8 @@ export const projectsData = [
     imageUrl: "/projectImages/answer.png",
     demoUrl: "https://answerflowai.com/",
     repoUrl: "https://github.com/shebll/AnswerFlow",
+    LinkedInPost:
+      "https://www.linkedin.com/posts/ahmed-shebl-07a331268_excited-to-share-my-latest-project-answerflow-activity-7191452152068747264-FG2G?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "SHADEL",
@@ -121,6 +129,8 @@ export const projectsData = [
     imageUrl: "/projectImages/shadel.png",
     demoUrl: "https://shadel.vercel.app/",
     repoUrl: "https://github.com/shebll/shadel",
+    LinkedInPost:
+      "https://www.linkedin.com/posts/ahmed-shebl-07a331268_excited-to-share-my-contribution-to-wadyeline-activity-7191078122912448514-P0tJ?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "Nexus-Admin",
@@ -141,16 +151,8 @@ export const projectsData = [
     imageUrl: "/projectImages/nexus-admin.png",
     demoUrl: "https://nexus-admin-panel.vercel.app/",
     repoUrl: "https://github.com/shebll/mental-health-admin-dashboard",
-  },
-  {
-    title: "Bento 0.2",
-    category: "Front-End",
-    description:
-      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
-    tags: ["React", "Next.js", "Framer-motion", "Tailwind"],
-    imageUrl: "/projectImages/bento.png",
-    demoUrl: "https://bentoclone.vercel.app/",
-    repoUrl: "https://github.com/shebll/bento",
+    LinkedInPost:
+      "https://www.linkedin.com/posts/ahmed-shebl-07a331268_nextjs-reactjs-zustand-activity-7234954626238734337-cItB?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "THEBEST",
@@ -161,16 +163,19 @@ export const projectsData = [
     imageUrl: "/projectImages/thebest.png",
     demoUrl: "https://thebest-football.vercel.app/",
     repoUrl: "https://github.com/shebll/thebest",
+    LinkedInPost:
+      "https://www.linkedin.com/posts/ahmed-shebl-07a331268_excited-to-share-my-latest-project-thebest-activity-7190422087499472896-VxEv?utm_source=share&utm_medium=member_desktop",
   },
   {
-    title: "Medium 0.2",
-    category: "Full-Stack",
+    title: "Bento 0.2",
+    category: "Front-End",
     description:
-      "I served as a full-stack developer on this project, leveraging Next.js for front-end development, implementing API functionality, and utilizing Sanity.io as the content management system (CMS). ",
-    tags: ["React", "Next.js", "Tailwind", "Sanity", "API"],
-    imageUrl: "/projectImages/medium.png",
-    demoUrl: "https://medium-blog-site-ebtq.vercel.app/",
-    repoUrl: "https://github.com/shebll/medium-blog-site",
+      "I worked as a freelancer front-end developer on an Upwork project for a client, the client wanted to copy the Bento landing page which has a lot of animation and user interaction, review from the client  ⭐⭐⭐⭐⭐",
+    tags: ["React", "Next.js", "Framer-motion", "Tailwind"],
+    imageUrl: "/projectImages/bento.png",
+    demoUrl: "https://bentoclone.vercel.app/",
+    repoUrl: "https://github.com/shebll/bento",
+    LinkedInPost: "https://github.com/shebll/notion",
   },
 ] as const;
 

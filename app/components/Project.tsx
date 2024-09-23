@@ -106,6 +106,9 @@ function Project({ project, index, range, target, progress }: props) {
               height={22}
             />{" "}
           </a>
+          <a href={project.LinkedInPost} target="_blank" className="btn">
+            LinkedIn Post
+          </a>
         </div>
       </div>
       <motion.div
