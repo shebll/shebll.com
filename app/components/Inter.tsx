@@ -73,7 +73,7 @@ function Inter() {
                 className="max-w-2xl mx-auto mt-4 text-lg font-normal text-center text-gray-600 dark:text-neutral-300"
               >
                 I specialize in{" "}
-                <span className=" marked "> Front-End Development</span> with
+                <span className=" marked"> Front-End Development</span> with
                 expertise in{" "}
                 <span className="font-bold marked ">React and Next.js</span>,
                 creating responsive, interactive, seamless, scalable, and
@@ -119,7 +119,7 @@ function Inter() {
                 target="blank"
               >
                 <Image
-                  src={"/skillsSVG/icons8-git (1).svg"}
+                  src={"/skillsSVG/icons8-git.svg"}
                   alt="Git logo"
                   width={26}
                   height={26}

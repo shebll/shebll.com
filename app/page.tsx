@@ -23,7 +23,7 @@ export default function Home() {
       <Divider />
       <Resume />
       <Divider />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Divider />
       <Contact />
     </main>
